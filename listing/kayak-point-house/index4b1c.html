@@ -1,0 +1,2564 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg" itemscope> 
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Kayak Point House / 40 Journal Square , NJ, USA &#8211; HomeRadar</title>
+<meta name='robots' content='max-image-preview:large, noindex, follow' />
+<link rel='dns-prefetch' href='http://api.mapbox.com/' />
+<link rel='dns-prefetch' href='http://cdn.jsdelivr.net/' />
+<link rel='dns-prefetch' href='http://addevent.com/' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="HomeRadar &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="HomeRadar &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="HomeRadar &raquo; Kayak Point House Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/homeradar.cththemes.co\/wp-includes\/js\/wp-emoji.js?ver=5.7.8","twemoji":"https:\/\/homeradar.cththemes.co\/wp-includes\/js\/twemoji.js?ver=5.7.8"}};
+			/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	// Create a canvas element for testing native browser support of emoji.
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {number[]} set1 Set of Emoji character codes.
+	 * @param {number[]} set2 Set of Emoji character codes.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detects if the browser supports rendering emoji or flag emoji.
+	 *
+	 * Flag emoji are a single glyph made of two characters, so some browsers
+	 * (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. This flag is shortlisted for the Emoji 13 spec,
+				 * but has landed in Twemoji early, so we can add support for it, too.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0x1F3F3, 0xFE0F, 0x200D, 0x26A7, 0xFE0F ],
+					[ 0x1F3F3, 0xFE0F, 0x200B, 0x26A7, 0xFE0F ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDDFA, 0xD83C, 0xDDF3 ],
+					[ 0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F ],
+					[ 0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * So easy, even a baby could do it!
+				 *
+				 *  To test for Emoji 13 support, try to render a new emoji: Man Feeding Baby.
+				 *
+				 * The Man Feeding Baby emoji is a ZWJ sequence combining 👨 Man, a Zero Width Joiner and 🍼 Baby Bottle.
+				 *
+				 * 0xD83D, 0xDC68 == Man emoji.
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the two code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0xD83C, 0xDF7C == Baby Bottle.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[0xD83D, 0xDC68, 0x200D, 0xD83C, 0xDF7C],
+					[0xD83D, 0xDC68, 0x200B, 0xD83C, 0xDF7C]
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {Object} src The url where the script is located.
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	/*
+	 * Tests the browser support for flag emojis and other emojis, and adjusts the
+	 * support settings accordingly.
+	 */
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	// Sets DOMReady to false and assigns a ready function to settings.
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	// When the browser can not render everything we need to load a polyfill.
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		/*
+		 * Cross-browser version of adding a dom ready event.
+		 */
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wc-block-vendors-style-css'  href='../../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style7def.css?ver=1646951691' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='../../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style7def.css?ver=1646951691' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../../wp-content/plugins/contact-form-7/includes/css/styles91d5.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='mb-YTPlayer-css'  href='../../wp-content/plugins/homeradar-add-ons/assets/vendors/jquery.mb.YTPlayer/jquery.mb.YTPlayer.mind988.css?ver=5.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='homeradar-addons-css'  href='../../wp-content/plugins/homeradar-add-ons/assets/css/homeradar-add-ons.mind988.css?ver=5.7.8' type='text/css' media='all' />
+<style id='homeradar-addons-inline-css' type='text/css'>
+@media screen and (min-width: 1024px){.body-townhub .azp-element-jsjrlk9fu{width:66.66%;}.body-townhub .azp-element-jsjrlmj98{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsk77s8g6{margin-top:15px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jsk77s8g6{padding-top:15px;padding-right:0px;padding-bottom:15px;padding-left:0px;}.body-townhub .azp-element-jsk77s8g6{border-top-width:1px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;}.body-townhub .azp-element-jsk77s8g6{border-color:#eeeeee;}.body-townhub .azp-element-jsk77s8g6{border-style:solid;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7rvlcg{width:30%;}.body-townhub .azp-element-jsl7rwlyd{width:30%;}.body-townhub .azp-element-jsl7rx0nl{width:30%;}.body-townhub .azp-element-jsl7rxu0v{width:10%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsjrlk9fu{width:66.66%;}.body-townhub .azp-element-jsjrlmj98{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsk77s8g6{margin-top:15px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jsk77s8g6{padding-top:15px;padding-right:0px;padding-bottom:15px;padding-left:0px;}.body-townhub .azp-element-jsk77s8g6{border-top-width:1px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;}.body-townhub .azp-element-jsk77s8g6{border-color:#eeeeee;}.body-townhub .azp-element-jsk77s8g6{border-style:solid;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7pamdd{padding-top:0px;padding-right:5px;padding-bottom:0px;padding-left:5px;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7tywcm{width:35%;}.body-townhub .azp-element-jsl7tzwlv{width:40%;}.body-townhub .azp-element-jsl7u08hw{width:25%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jsl7tywcm{width:35%;}.body-townhub .azp-element-jsl7tzwlv{width:40%;}.body-townhub .azp-element-jsl7u08hw{width:25%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jsl7tywcm{width:35%;}.body-townhub .azp-element-jsl7tzwlv{width:40%;}.body-townhub .azp-element-jsl7u08hw{width:25%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7rvlcg{width:30%;}.body-townhub .azp-element-jsl7rwlyd{width:30%;}.body-townhub .azp-element-jsl7rx0nl{width:30%;}.body-townhub .azp-element-jsl7rxu0v{width:10%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsjrlk9fu{width:66.66%;}.body-townhub .azp-element-jsjrlmj98{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsk77s8g6{margin-top:15px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jsk77s8g6{padding-top:15px;padding-right:0px;padding-bottom:15px;padding-left:0px;}.body-townhub .azp-element-jsk77s8g6{border-top-width:1px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;}.body-townhub .azp-element-jsk77s8g6{border-color:#eeeeee;}.body-townhub .azp-element-jsk77s8g6{border-style:solid;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7rvlcg{width:30%;}.body-townhub .azp-element-jsl7rwlyd{width:30%;}.body-townhub .azp-element-jsl7rx0nl{width:30%;}.body-townhub .azp-element-jsl7rxu0v{width:10%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsjrlk9fu{width:66.66%;}.body-townhub .azp-element-jsjrlmj98{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsk77s8g6{margin-top:15px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jsk77s8g6{padding-top:15px;padding-right:0px;padding-bottom:15px;padding-left:0px;}.body-townhub .azp-element-jsk77s8g6{border-top-width:1px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;}.body-townhub .azp-element-jsk77s8g6{border-color:#eeeeee;}.body-townhub .azp-element-jsk77s8g6{border-style:solid;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7rvlcg{width:30%;}.body-townhub .azp-element-jsl7rwlyd{width:30%;}.body-townhub .azp-element-jsl7rx0nl{width:30%;}.body-townhub .azp-element-jsl7rxu0v{width:10%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsjrlk9fu{width:66.66%;}.body-townhub .azp-element-jsjrlmj98{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsk77s8g6{margin-top:15px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jsk77s8g6{padding-top:15px;padding-right:0px;padding-bottom:15px;padding-left:0px;}.body-townhub .azp-element-jsk77s8g6{border-top-width:1px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;}.body-townhub .azp-element-jsk77s8g6{border-color:#eeeeee;}.body-townhub .azp-element-jsk77s8g6{border-style:solid;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7rvlcg{width:30%;}.body-townhub .azp-element-jsl7rwlyd{width:30%;}.body-townhub .azp-element-jsl7rx0nl{width:30%;}.body-townhub .azp-element-jsl7rxu0v{width:10%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jrbjigyl7{width:40%;}.body-townhub .azp-element-jrbjiiz3o{width:60%;}.body-townhub .azp-element-jrbjjq07j{width:50%;}.body-townhub .azp-element-jrbjjqeyl{width:50%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jrbjiiz3o{margin-top:20px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jrbjjq07j{width:50%;}.body-townhub .azp-element-jrbjjqeyl{width:50%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jrbjiiz3o{margin-top:20px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jrbjjq07j{width:100%;}.body-townhub .azp-element-jrbjjqeyl{width:100%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsjrlk9fu{width:66.66%;}.body-townhub .azp-element-jsjrlmj98{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsk77s8g6{margin-top:15px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.body-townhub .azp-element-jsk77s8g6{padding-top:15px;padding-right:0px;padding-bottom:15px;padding-left:0px;}.body-townhub .azp-element-jsk77s8g6{border-top-width:1px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;}.body-townhub .azp-element-jsk77s8g6{border-color:#eeeeee;}.body-townhub .azp-element-jsk77s8g6{border-style:solid;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jsl7tywcm{width:33.33%;}.body-townhub .azp-element-jsl7tzwlv{width:33.33%;}.body-townhub .azp-element-jsl7u08hw{width:33.33%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jsl7rvlcg{width:30%;}.body-townhub .azp-element-jsl7rwlyd{width:30%;}.body-townhub .azp-element-jsl7rx0nl{width:30%;}.body-townhub .azp-element-jsl7rxu0v{width:10%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jrbjswq2h{width:40%;}.body-townhub .azp-element-jrbjsy5lo{width:60%;}.body-townhub .azp-element-jrbjtksey{width:50%;}.body-townhub .azp-element-jrbjtm3t0{width:50%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jrbjtksey{width:50%;}.body-townhub .azp-element-jrbjtm3t0{width:50%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jrbjtksey{width:100%;}.body-townhub .azp-element-jrbjtm3t0{width:100%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jrbjvwwlk{width:40%;}.body-townhub .azp-element-jrbjvy4wt{width:60%;}.body-townhub .azp-element-jrbjwk57s{width:50%;}.body-townhub .azp-element-jrbjwksx3{width:50%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jrbjwk57s{width:50%;}.body-townhub .azp-element-jrbjwksx3{width:50%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jrbjwk57s{width:100%;}.body-townhub .azp-element-jrbjwksx3{width:100%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jrbjigyl7{width:40%;}.body-townhub .azp-element-jrbjiiz3o{width:60%;}.body-townhub .azp-element-jrbjjq07j{width:50%;}.body-townhub .azp-element-jrbjjqeyl{width:50%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jrbjjq07j{width:50%;}.body-townhub .azp-element-jrbjjqeyl{width:50%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jrbjjq07j{width:100%;}.body-townhub .azp-element-jrbjjqeyl{width:100%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){.body-townhub .azp-element-jntppoptq{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px;}.body-townhub .azp-element-jntppoptb{}.body-townhub .azp-element-jntppopt2{padding-top:0px;padding-right:15px;padding-bottom:0px;padding-left:15px;}.body-townhub .azp-element-jntppopt9{padding-top:0px;padding-right:15px;padding-bottom:0px;padding-left:15px;}.body-townhub .azp-element-jntsaoshn{width:30%;}.body-townhub .azp-element-jntxupccy{padding-top:0px;padding-right:10px;padding-bottom:0px;padding-left:10px;}.body-townhub .azp-element-jntxupwfc{padding-top:0px;padding-right:10px;padding-bottom:0px;padding-left:10px;}.body-townhub .azp-element-jntxuq22y{padding-top:0px;padding-right:10px;padding-bottom:0px;padding-left:10px;}.body-townhub .azp-element-jntsaq58s{width:50%;}.body-townhub .azp-element-jntsaqw31{width:20%;}}@media screen and (max-width: 1024px) and (min-width: 768px) {.body-townhub .azp-element-jntppoptq{width:100%;}.body-townhub .azp-element-jntppoptq{padding:1px;}.body-townhub .azp-element-jntppopt2{width:100%;}.body-townhub .azp-element-jntppopt9{width:100%;}.body-townhub .azp-element-jntsaoshn{width:100%;}.body-townhub .azp-element-jntsaq58s{width:100%;}.body-townhub .azp-element-jntsaqw31{width:100%;}.body-townhub .azp-element-jntxvme4t{width:100%;}.body-townhub .azp-element-jntxw1qca{width:100%;}}@media screen and (max-width: 767px){.body-townhub .azp-element-jntppoptq{width:100%;}.body-townhub .azp-element-jntppopt2{width:100%;}.body-townhub .azp-element-jntppopt9{width:100%;}.body-townhub .azp-element-jntsaoshn{width:100%;}.body-townhub .azp-element-jntsaq58s{width:100%;}.body-townhub .azp-element-jntsaqw31{width:100%;}}@media screen and (min-width: 1024px){.body-townhub .azp-element-jo6tan48k{width:33.33%;}.body-townhub .azp-element-jo6tan48k{padding-top:0px;padding-right:10px;padding-bottom:0px;padding-left:10px;}.body-townhub .azp-element-jo6tao5qk{width:25%;}.body-townhub .azp-element-jo6tao5qk{padding-top:0px;padding-right:10px;padding-bottom:0px;padding-left:10px;}.body-townhub .azp-element-jo6taopq9{width:25%;}.body-townhub .azp-element-jo6taopq9{padding-top:0px;padding-right:10px;padding-bottom:0px;padding-left:10px;}.body-townhub .azp-element-jo6tapo5a{width:16.66%;}}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}@media screen and (min-width: 1024px){}
+</style>
+<link rel='stylesheet' id='mapbox-gl-css'  href='../../../api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gld988.css?ver=5.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='mapbox-gl-geocoder-css'  href='../../../api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoderd988.css?ver=5.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-layout6619.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen6619.css?ver=5.2.5' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='../../wp-content/plugins/woocommerce/assets/css/woocommerce6619.css?ver=5.2.5' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='facebook-login-css'  href='../../wp-content/plugins/wp-facebook-login/public/css/facebook-login7515.css?ver=1.2.3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='hfe-style-css'  href='../../wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor7fb9.css?ver=1.5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='../../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons21f9.css?ver=5.11.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='../../wp-content/plugins/elementor/assets/lib/animations/animations.mindeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='../../wp-content/plugins/elementor/assets/css/frontend-legacydeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='../../wp-content/plugins/elementor/assets/css/frontenddeae.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-7175-css'  href='../../wp-content/uploads/elementor/css/post-71755e20.css?ver=1619319903' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='../../wp-content/uploads/elementor/css/globalc728.css?ver=1619319904' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-8091-css'  href='../../wp-content/uploads/elementor/css/post-8091c728.css?ver=1619319904' type='text/css' media='all' />
+<link rel='stylesheet' id='hfe-widgets-style-css'  href='../../wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend7fb9.css?ver=1.5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='homeradar-fonts-css'  href='https://fonts.googleapis.com/css2?family=Jost%3Awght%40300%3B400%3B500%3B600%3B700%3B800%3B900&amp;display=swap&amp;subset=cyrillic%2Cvietnamese' type='text/css' media='all' />
+<link rel='stylesheet' id='homeradar-plugins-css'  href='../../wp-content/themes/homeradar/assets/css/plugins.css' type='text/css' media='all' />
+<link rel='stylesheet' id='homeradar-style-css'  href='../../wp-content/themes/homeradar/styled988.css?ver=5.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='homeradar-color-css'  href='../../wp-content/themes/homeradar/assets/css/color.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome9e0b.css?ver=5.15.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/brands9e0b.css?ver=5.15.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrated617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='facebook-login-js-extra'>
+/* <![CDATA[ */
+var fbl = {"ajaxurl":"https:\/\/homeradar.cththemes.co\/wp-admin\/admin-ajax.php","site_url":"https:\/\/homeradar.cththemes.co","scopes":"email,public_profile","appId":"1994730950790757","l18n":{"chrome_ios_alert":"Please login into facebook and then click connect button again"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/wp-facebook-login/public/js/facebook-login7515.js?ver=1.2.3.5' id='facebook-login-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/Scrollax68b3.js?ver=1' id='scrollax-js'></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.html" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.html" /> 
+<meta name="generator" content="WordPress 5.7.8" />
+<meta name="generator" content="WooCommerce 5.2.5" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../indexfc20.html?p=5115' />
+<link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed4462.json?url=https%3A%2F%2Fhomeradar.cththemes.co%2Flisting%2Fkayak-point-house%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed600f?url=https%3A%2F%2Fhomeradar.cththemes.co%2Flisting%2Fkayak-point-house%2F&amp;format=xml" />
+<meta name="framework" content="Redux 4.2.14" /><link rel="dns-prefetch" href="http://connect.facebook.net/" />
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="../../wp-content/uploads/2018/06/CTH-themes.jpg" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2018/06/CTH-themes.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2018/06/CTH-themes.jpg" />
+<meta name="msapplication-TileImage" content="https://homeradar.cththemes.co/wp-content/uploads/2018/06/CTH-themes.jpg" />
+    <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Restaurant","name":"Kayak Point House","image":"https:\/\/homeradar.cththemes.co\/wp-content\/uploads\/2021\/03\/8.jpg","url":"https:\/\/homeradar.cththemes.co\/listing\/kayak-point-house\/","description":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.<\/p>\n","telephone":"+7(123)987654"}</script>
+    <style id="homeradar_options-dynamic-css" title="dynamic-css" class="redux-options-output">body{font-display:swap;}a{font-display:swap;}a:hover{font-display:swap;}p{font-display:swap;}h1, h2, h3, h4, h5, h6{font-display:swap;}nav li a,.hero-wrap-item h2,.serv-details h3,.ser-list li,.inline-filter .gallery-filters a,.inline-filter .count-folio div,.filter-button,.round-counter div,.hid-sidebar h4 ,.pd-holder h5,.team-info h4,.footer-title h2,#submit , .form-submit button,.member-content-nav li a,.main-breadcrumb li > strong,.creat-list li a  , .text-link,.cat-item a,.lg-sub-html,.show-share span{font-display:swap;}blockquote p{font-display:swap;}nav li a{font-display:swap;}nav li a:hover{font-display:swap;}.footer-title h2,.footer-title h2 a,.footer-title h2 a:hover{font-display:swap;}.hero-wrap-item h2{font-display:swap;}.hero-wrap-item h3, .hero-wrap-item h3 a{font-display:swap;}.section-title{font-display:swap;}</style></head>
+
+<body class="listing-template-default single single-listing postid-5115 wp-custom-logo theme-homeradar homeradar-has-addons listing-type-id-6379 woocommerce-no-js ehf-footer ehf-template-homeradar ehf-stylesheet-homeradar body-homeradar folio-archive- woo-three woo-tablet-two elementor-default elementor-kit-7175">
+        <!--loader-->
+    <div class="loader-wrap">
+        <div class="loader-inner">
+                    <svg>
+                <defs>
+                    <filter id="goo">
+                        <fegaussianblur in="SourceGraphic" stdDeviation="2" result="blur" />
+                        <fecolormatrix in="blur"   values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+                        <fecomposite in="SourceGraphic" in2="gooey" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+                </div>
+    </div>
+    <!--loader end-->
+    <div id="main-theme">
+
+                <!-- header-->
+        <header id="masthead" class="homeradar-header main-header">
+
+            <!--  logo  -->
+            <div class="logo-holder">
+                <a href="../../index.html" class="custom-logo-link" rel="home"><img width="192" height="41" class="custom-logo lazy" alt="HomeRadar" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/logo.png" data-lazy="https://homeradar.cththemes.co/wp-content/uploads/2021/03/logo.png" /></a>            </div>
+            <!-- logo end  -->
+            <!-- nav-button-wrap--> 
+            <div class="nav-button-wrap color-bg nvminit">
+                <div class="nav-button">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <!-- nav-button-wrap end--> 
+            
+
+            
+            
+
+            <!-- header-search_btn-->         
+                    <!-- header-search button  -->
+        <div class="header-search-button">
+            <i class="fal fa-search"></i>
+            <span>Search...</span>
+        </div>
+        <!-- header-search button end  -->
+
+        <!-- header-search-wrapper -->
+        <div class="header-search-wrapper novis_search">
+            <div class="header-search-inner">
+                <form role="search" method="get" action="https://homeradar.cththemes.co/" class="list-search-header-form list-search-form-js">
+                    <div class="azp_element filter_form_header azp-element-azp-ax8l2dbeb7d" >
+    <div class="head-inputs-wrap fl-wrap">
+        <div class="azp_element filter_status_btn azp-element-azp-0h8aqzff5ttc filter-gid-item filter-gid-wid-12" >
+    <div class="filter-item-inner">
+        <div class="custom-switcher fl-wrap">
+            <div class="fieldset fl-wrap">
+                                    <input type="radio" name="status" id="6383300905ef9" value="for-sale" class="tariff-toggle"  checked='checked'>
+                                        <label for="6383300905ef9">For Sale</label>
+                                        <input type="radio" name="status" id="6383300905f0b" value="for-rent" class="tariff-toggle" >
+                                        <label for="6383300905f0b">For Rent</label>
+                                    <span class="switch color-bg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="azp_element filter_title azp-element-azp-2z7zvwi1qxr filter-gid-item filter-gid-wid-12" >
+    <div class="filter-item-inner">
+                <div class="listsearch-input-title">
+            <label>Keywords</label>                    </div>
+                <input type="text" name="search_term" placeholder="What are you looking for?" value=""/>
+    </div>
+        
+</div><div class="azp_element filter_cat azp-element-azp-hldsun6ublt filter-gid-item filter-gid-wid-12" >
+    <div class="filter-item-inner">
+                <div class="listsearch-input-title">
+            <label>Categories</label>                    </div>
+                <select data-placeholder="All Categories"  class="chosen-select" name="lcats[]">
+            <option value="">All Categories</option>            <option value="626">Apartment</option><option value="629">Home</option><option value="195">Hotel</option><option value="627">House</option><option value="630">Office</option><option value="628">Villa</option>        </select>
+    </div>
+</div><div class="azp_element filter_price azp-element-azp-v9jf7pzx69 filter-gid-item filter-gid-wid-12" >
+    <div class="filter-item-inner">
+        <div class="price-rage-wrap fl-wrap">
+        
+                        <div class="price-rage-wrap-title">
+                                Price Range            </div>
+                        <div class="price-rage-item fl-wrap">
+                <input class="price-slider" data-type="double" data-from="0" data-to="149757300" data-step="74878.65" data-min="0" data-max="149757300" data-prefix="Rs" data-prettify-separator=",">
+                <input type="hidden" name="fprice" class="price_range_hidden" value="0;2000000">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="azp_element filter_submit azp-element-azp-1ejj1kr5y4v filter-gid-item filter-gid-wid-12" >
+    <div class="filter-item-inner">
+
+        <button class="btn color-bg fw-btn small-btn filter-submit-btn" type="submit">
+                        <i class="fal fa-search"></i>
+                        <span>Search</span>        </button>
+    </div>
+        
+</div>        
+    </div>
+</div> 
+                       
+                </form> 
+            </div>
+            
+        </div>
+        <!-- header-search-wrapper end  -->  
+        
+            <!--  add new  btn -->
+<div class="add-list_wrap">
+    <a href="#" class="add-list color-bg logreg-modal-open" data-message="You must be logged in to add listings."><i class="fal fa-plus"></i> <span>Add Listing</span></a>
+</div>
+<!--  add new  btn end -->
+             
+            
+            
+                <!--  header-opt_btn -->
+    <div class="header-opt_btn tolt" data-microtip-position="bottom"  data-tooltip="Language / Currency">
+        <span><i class="fal fa-globe"></i></span>
+    </div>
+    <!--  header-opt_btn end -->
+    <!--header-opt-modal-->  
+    <div class="header-opt-modal novis_header-mod">
+        <div class="header-opt-modal-container hopmc_init">
+            <div class="header-opt-modal-item lang-item fl-wrap">
+                <!-- <h4>Language: <span>EN</span></h4>
+                <div class="header-opt-modal-list fl-wrap">
+                    <ul>
+                        <li><a href="#" class="current-lan" data-lantext="EN">English</a></li>
+                        <li><a href="#" data-lantext="FR">Franais</a></li>
+                        <li><a href="#" data-lantext="ES">Espaol</a></li>
+                        <li><a href="#" data-lantext="DE">Deutsch</a></li>
+                    </ul>
+                </div> -->
+                <div id="custom_html-12" class="widget_text homeradar-lang-curr-wrap widget_custom_html"><div class="textwidget custom-html-widget"><h4>Language: <span>EN</span></h4>
+                <div class="header-opt-modal-list fl-wrap">
+                    <ul>
+                        <li><a href="#" class="current-lan" data-lantext="EN">English</a></li>
+                        <li><a href="#" data-lantext="FR">Franais</a></li>
+                        <li><a href="#" data-lantext="ES">Espaol</a></li>
+                        <li><a href="#" data-lantext="DE">Deutsch</a></li>
+                    </ul>
+                </div></div></div>            </div>
+                        <div class="header-opt-modal-item currency-item fl-wrap">
+                <h4>Currency: <span>INR</span></h4>
+                                <div class="header-opt-modal-list fl-wrap">
+                    <ul>
+                                        <li><a href="index7c81.html?replytocom=183&amp;currency=EUR" class="currency-item current-curr" data-lantext="EUR">EUR</a></li>
+                                                <li><a href="indexc37f.html?replytocom=183&amp;currency=GBP" class="currency-item current-curr" data-lantext="GBP">GBP</a></li>
+                                                <li><a href="indexc738.html?replytocom=183&amp;currency=USD" class="currency-item current-curr" data-lantext="USD">USD</a></li>
+                                            </ul>
+                </div>
+                        </div>
+        </div>
+    </div>
+    <!--header-opt-modal end --> 
+                
+            
+            
+            <!--  cart-btn   -->
+<div class="cart-btn  tolt show-header-modal" data-microtip-position="bottom"  data-tooltip="Your Wishlist / Compare">
+    <i class="fal fa-bell"></i>
+    <span class="cart-btn_counter color-bg bmcounter-head">0</span>
+</div>
+<!--  cart-btn end -->
+
+<!-- wishlist-wrap--> 
+<div class="header-modal novis_wishlist tabs-act tabs-wrapper">
+    <ul class="tabs-menu fl-wrap no-list-style">
+        <li class="current"><a href="#tab-wish">Wishlist - <span class="bmcounter-tab">0</span></a></li>
+        <li><a href="#tab-compare">Compare - <span class="cpcounter-tab">0</span></a></li>
+    </ul>
+    <!--tabs -->                       
+    <div class="tabs-container">
+        <div class="tab">
+            <!--tab -->
+            <div id="tab-wish" class="tab-content first-tab">
+                <!-- header-modal-container--> 
+                <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                    <!--widget-posts-->
+                    <div class="widget-posts  fl-wrap">
+                        <ul class="no-list-style wishlist-items-wrap">
+                            
+                                                            <li class="wishlist-item no-bookmark-wrap">
+                                    <p>You have no bookmark.</p>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <!-- widget-posts end-->
+                </div>
+                <!-- header-modal-container end--> 
+                <div class="header-modal-top fl-wrap">
+                    <div class="clear_wishlist color-bg clear-bookmark-btn"><i class="fal fa-trash-alt"></i>Clear all</div>
+                </div>
+            </div>
+            <!--tab end -->
+            <!--tab -->
+            <div class="tab">
+                <div id="tab-compare" class="tab-content">
+                    <!-- header-modal-container--> 
+                    <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                        <!--widget-posts-->
+                        <div class="widget-posts  fl-wrap">
+                            <ul class="no-list-style compare-items-wrap">
+                                                                    <li class="wishlist-item no-compare-item">
+                                        <p>You have no item to compare.</p>
+                                    </li>
+                                                            </ul>
+                        </div>
+                        <!-- widget-posts end-->
+                    </div>
+                    <!-- header-modal-container end-->                                      
+                    <div class="header-modal-top fl-wrap">
+                        <a class="clear_wishlist color-bg" href="../../compare/index.html"><i class="fal fa-random"></i>Compare</a>
+                    </div>
+                </div>
+            </div>
+            <!--tab end -->
+        </div>
+        <!--tabs end -->                            
+    </div>
+</div>
+<!--wishlist-wrap end -->               
+                        <!--  login btn -->
+            <a href="#" class="show-reg-form avatar-img logreg-modal-open"><i class="fas fa-user"></i><span>Sign In</span></a>
+            <!--  login btn  end -->
+                    
+            
+            <!--  navigation --> 
+                            <!--  .nav-holder -->
+                <div class="nav-holder main-menu">
+                    <nav id="site-navigation" class="main-navigation" aria-label="Top Menu">
+    <ul id="top-menu" class="menu"><li id="menu-item-1316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1316"><a href="../../index.html">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-8235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8235"><a href="../../index.html">Parallax Image</a></li>
+	<li id="menu-item-6826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6826"><a href="../../home-slider/index.html">Slider</a></li>
+	<li id="menu-item-6825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6825"><a href="../../home-slideshow/index.html">Slideshow</a></li>
+	<li id="menu-item-6824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6824"><a href="../../home-video/index.html">Video</a></li>
+	<li id="menu-item-6823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6823"><a href="../../home-map/index.html">Map</a></li>
+</ul>
+</li>
+<li id="menu-item-6798" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6798"><a href="../../listings/index.html">Listings</a>
+<ul class="sub-menu">
+	<li id="menu-item-6804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6804"><a href="../../listings/column-map/index.html">Column Map</a></li>
+	<li id="menu-item-6803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6803"><a href="../../listings/column-map-filter/index.html">Column Map 2</a></li>
+	<li id="menu-item-6802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6802"><a href="../../listings/full-map/index.html">Full Map</a></li>
+	<li id="menu-item-6801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6801"><a href="../../listings/full-map-filter/index.html">Full Map 2</a></li>
+	<li id="menu-item-6800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6800"><a href="../../listings/without-map/index.html">Without Map</a></li>
+	<li id="menu-item-6799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6799"><a href="../../listings/without-map-filter/index.html">Without Map 2</a></li>
+	<li id="menu-item-2138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2138"><a href="#">Single</a>
+	<ul class="sub-menu">
+		<li id="menu-item-8280" class="menu-item menu-item-type-post_type menu-item-object-listing menu-item-8280"><a href="../urban-house/index.html">Parallax Image</a></li>
+		<li id="menu-item-8282" class="menu-item menu-item-type-post_type menu-item-object-listing menu-item-8282"><a href="../apartment-in-building/index.html">Carousel</a></li>
+		<li id="menu-item-8279" class="menu-item menu-item-type-post_type menu-item-object-listing menu-item-8279"><a href="../luxury-family-home/index.html">Slideshow</a></li>
+		<li id="menu-item-8284" class="menu-item menu-item-type-post_type menu-item-object-listing menu-item-8284"><a href="../home-in-new-york/index.html">Video</a></li>
+		<li id="menu-item-8283" class="menu-item menu-item-type-post_type menu-item-object-listing menu-item-8283"><a href="../gorgeous-house-for-sale/index.html">Map</a></li>
+		<li id="menu-item-8285" class="menu-item menu-item-type-post_type menu-item-object-listing menu-item-8285"><a href="../light-and-modern-house/index.html">iFrame</a></li>
+		<li id="menu-item-8281" class="menu-item menu-item-type-post_type menu-item-object-listing menu-item-8281"><a href="../monteplaza-hotel/index.html">No Header</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-8038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8038"><a href="#">Agents</a>
+<ul class="sub-menu">
+	<li id="menu-item-8343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8343"><a href="../../agents-list/index.html">Agents List</a></li>
+	<li id="menu-item-8344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8344"><a href="../../agencies-list/index.html">Agencies List</a></li>
+	<li id="menu-item-8040" class="menu-item menu-item-type-post_type menu-item-object-lagent menu-item-8040"><a href="../../agent/andy-sposty/index.html">Agent Single</a></li>
+	<li id="menu-item-8039" class="menu-item menu-item-type-post_type menu-item-object-lagency menu-item-8039"><a href="../../agency/modern-house-real-estate/index.html">Agency Single</a></li>
+</ul>
+</li>
+<li id="menu-item-1930" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1930"><a href="../../news/index.html">News</a></li>
+<li id="menu-item-1572" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1572"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li id="menu-item-1321" class="ajax menu-item menu-item-type-post_type menu-item-object-page menu-item-1321"><a href="../../about/index.html">About Us</a></li>
+	<li id="menu-item-1314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1314"><a href="../../contacts/index.html">Contacts</a></li>
+	<li id="menu-item-3562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3562"><a href="../../help-center/index.html">Help FAQ</a></li>
+	<li id="menu-item-6592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6592"><a href="../../author/admin/index.html">Author Single</a></li>
+	<li id="menu-item-2352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2352"><a href="../../pricing/index.html">Pricing</a></li>
+	<li id="menu-item-6574" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6574"><a href="../../integer-sagittis/index.html">Single Post</a></li>
+	<li id="menu-item-7883" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7883"><a href="index373b.html?demo_mode=coming_soon">Coming Soon</a></li>
+	<li id="menu-item-7882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7882"><a href="index0885.html?demo_mode=maintenance">Maintenance</a></li>
+	<li id="menu-item-2218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2218"><a href="../../404-page.html">404</a></li>
+</ul>
+</li>
+</ul></nav><!-- #site-navigation -->
+                </div><!-- .nav-holder -->
+                        <!-- navigation  end -->
+
+            <!-- header opt -->
+            
+            
+            
+
+            
+            <!-- header opt end--> 
+            
+
+
+                       
+                                     
+            
+
+
+
+            
+            
+            
+
+        </header>
+        <!--  header end -->
+        
+        <!--  wrapper  -->
+        <div id="wrapper">
+            <!-- Content-->
+            <div class="content">
+
+                
+<div id="ltop_sec"></div>
+<div class="azp_element lheader_sec azp-element-azp-3x74g7y062c lheader_sec-bgimage" >
+<section class="hidden-section lhead-sec  single-hero-section" data-scrollax-parent="true" id="lhead_sec">
+    <div class="bg-wrap bg-parallax-wrap-gradien">
+        <div class="bg par-elem" data-bg="https://homeradar.cththemes.co/wp-content/uploads/2021/04/1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+    </div>
+    <div class="container idx-5">
+        <div class="list-single-opt_header fl-wrap">
+    <div class="list-single-opt_header_cat dis-flex-wrap">
+        <a href="../../listing_status/for-sale/index.html" class="cat-opt status-opt flex-items-center">For Sale</span></a>         <a href="../../listing_cat/house/index.html" class="cat-opt flex-items-center">House</a>     </div>
+</div>
+<!--  list-single-header-item-->
+<div class="list-single-header-item no-bg-list_sh fl-wrap">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="lhead-title">
+                Kayak Point House                <span class="verified-badge tolt" data-microtip-position="bottom"  data-tooltip="Verified"><i class="fas fa-check"></i></span>                            </h1>
+                        <div class="lhead-address-share-wrap dis-flex jtf-space-between">
+                <div class="lhead-top-left">
+                    <div class="geodir-category-location dis-flex-wrap">
+                                            <a href="https://www.google.com/maps/search/?api=1&amp;query=7.539988999999998,-5.547079999999999" target="_blank"><i class="fas fa-map-marker-alt"></i>40 Journal Square , NJ, USA</a>                        <a href="tel:+7(123)987654"> <i class="fal fa-phone"></i>+7(123)987654</a>                        <a href="mailto:yourmail@domain.com"><i class="fal fa-envelope"></i>yourmail@domain.com</a>                        <a href="https://cththemes.com/" target="_blank"><i class="fal fa-globe"></i>https://cththemes.com</a>                                                                            <div class="listing-rating card-popup-rainingvis" data-stars="5" data-rating="4.5"><span class="re_stars-title">Excellent</span></div>
+                          
+
+                                        </div>
+                                    </div>
+                <div class="lhead-top-right">
+                        <div class="share-holder hid-share">
+        <a href="#" class="share-btn showshare"><i class="fas fa-share-alt"></i>Share</a>
+        <div class="share-container isShare" data-share="facebook, pinterest, googleplus, twitter, linkedin"></div>
+    </div>
+                                        </div>
+            </div><!-- lhead-address-share-wrap end -->
+                    </div>
+    </div>
+    <div class="list-single-header-footer fl-wrap dis-flex jtf-space-between">
+        <div class="lhead-bot-left flex-items-center">
+            <div class="list-single-header-price"><strong>Price:</strong>Rs23,961,168</div>                        <div class="list-single-header-date"><span>Date:</span>12 December, 2018</div>
+                                </div>
+        <div class="lhead-bot-right">
+                        <div class="list-single-stats">
+                <ul class="no-list-style">
+                                        <li><span class="viewed-counter"><i class="fas fa-eye"></i> Viewed - 848</span></li>
+                                                        </ul>
+            </div>
+                                </div>
+    </div>
+</div>
+        
+    </div>
+</section></div>
+
+
+
+<div class="azp_element azp-element-azp-yw6lbyb0cxl azp_row_section azp_row_section-fullscreen azp_row_section-0-gap" >
+	
+		<div class="azp_container azp_container-fluid">
+					<div class="azp_row azp_row-wrap">
+								<div  class="azp_element azp-element-azp-mvdfasxqqe9 azp_col azp-col-100">
+				<!-- breadcrumbs-->
+<div class="azp_element lbreadcrumbs azp-element-azp-83721eo8vyj breadcrumbs-wrapper inline-breadcrumbs fw-breadcrumbs sp-brd fl-wrap" >
+    <div class="container">
+        <div class="inline-breadcrumbs-wrap flex-items-center jtf-space-between flw-wrap">
+            <div class="breadcrumbs-list "><a class="breadcrumb-link breadcrumb-home" href="../../index.html" title="Home">Home</a><a class="breadcrumb-link bread-cat-627 bread-cat-house" href="../../listing_cat/house/index.html" title="House">House</a><span class="breadcrumb-current breadcrumb-item-5115" title="Kayak Point House">Kayak Point House</span></div>            <div class="inline-breadcrumbs-right flex-items-center">
+
+                
+                    <a href="#" class="like-btn lhead-bookmark-btn logreg-modal-open" data-message="Logging in first to bookmark this listing."><i class="fal fa-heart"></i> Save </a>
+                    
+                                <a class="compare-top-btn tolt" data-microtip-position="bottom"  data-tooltip="Compare" href="#"><i class="fas fa-random"></i></a>
+                     
+
+                                <a class="print-btn tolt" href="javascript:window.print()" data-microtip-position="bottom"  data-tooltip="Print"><i class="fas fa-print"></i></a>
+                     
+                
+                                <div class="lhead-more-wrap">
+                    <div class="show-more-snopt smact"><i class="fal fa-ellipsis-v"></i></div>
+                    <div class="show-more-snopt-tooltip">
+                                                <a class="custom-scroll-link" href="#lreviews_sec"> <i class="fas fa-comment-alt"></i>Write a review</a>                        
+                                                                                <a href="#" class="report-listing-btn logreg-modal-open" data-message="Logging in first to report this listing."> <i class="fas fa-exclamation-triangle"></i>Report listing</a>
+                                                                        </div>
+                </div>
+                        
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumbs end -->			</div>
+				</div>
+	</div>
+	
+</div>
+<div class="azp_element azp-element-azp-zvmeb6m1tr azp_row_section azp_row_section-default azp_row_section-15-gap pad-top-50" >
+	
+		<div class="azp_container">
+					<div class="azp_row azp_row-wrap">
+								<div  class="azp_element azp-element-azp-c1r6whtz4ki azp_col azp-col-66 list-single-main-wrapper">
+				<div class="azp_element lscrollbar_sec azp-element-azp-tfk2a2hqpk" >                     
+	<!-- scroll-nav-wrapper--> 
+    <div class="scroll-nav-wrap lscroll-mobile-no">
+        
+        	
+        		<nav class="scroll-nav scroll-init fixed-column_menu-init">
+	                <ul class="no-list-style">
+	                    
+	                    	                            <li  class="sclnav-item sclnav-item-mobile-yes"><a href="#lhead_sec"><i class="fal fa-home-lg-alt"></i></a><span>Main</span></li>                  
+	                    	                            <li  class="sclnav-item sclnav-item-mobile-yes"><a href="#gallery_sec"><i class="fal fa-image"></i></a><span>Gallery</span></li>                  
+	                    	                            <li  class="sclnav-item sclnav-item-mobile-yes"><a href="#details_sec"><i class="fal fa-info"></i></a><span>Details</span></li>                  
+	                    	                            <li  class="sclnav-item sclnav-item-mobile-yes"><a href="#rooms_sec"><i class="fal fa-bed"></i></a><span>Rooms</span></li>                  
+	                    	                            <li  class="sclnav-item sclnav-item-mobile-yes"><a href="#facts_sec"><i class="fal fa-info"></i></a><span>Facts</span></li>                  
+	                    	                            <li  class="sclnav-item sclnav-item-mobile-yes"><a href="#video_sec"><i class="fal fa-video"></i></a><span>Video</span></li>                  
+	                    	                            <li  class="sclnav-item sclnav-item-mobile-yes"><a href="#map_sec"><i class="fal fa-map-pin"></i></a><span>Location</span></li>                  
+	                    <li class="sclnav-item sclnav-lreview"><a href="#lreviews_sec"><i class="fal fa-comment-alt-lines"></i></a><span> Reviews</span></li>	                </ul>
+	                <div class="progress-indicator">
+	                    <svg xmlns="http://www.w3.org/2000/svg"
+	                        viewBox="-1 -1 34 34">
+	                        <circle cx="16" cy="16" r="15.9155"
+	                            class="progress-bar__background" />
+	                        <circle cx="16" cy="16" r="15.9155"
+	                            class="progress-bar__progress 
+	                            js-progress-bar" />
+	                    </svg>
+	                </div>
+	            </nav>
+	            
+        	
+        
+    </div>
+    <!-- scroll-nav-wrapper end--> 
+</div><div class="azp_element lphotos azp-element-azp-8hpajabf1ga authplan-hide-false" id="gallery_sec">
+    <div class="for-hide-on-author"></div>
+    <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box lphotos-block">
+                <div class="lsingle-block-content">
+                        <div class="single-gallery-wrap cthiso-isotope-wrapper">
+
+                <div class="cthiso-items cthiso-extrasmall-pad cthiso-three-cols clearfix cthiso-flex lightgallery">
+                    <!-- <div class="cthiso-sizer"></div> -->
+                                        <div class="cthiso-item gallery-item">
+                        <div class="grid-item-holder">
+                            <div class="box-item">
+                                <img width="1200" height="800" class="attachment-homeradar-gallery-one size-homeradar-gallery-one lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/1-1.jpg" data-lazy="../../wp-content/uploads/2021/03/1-1.jpg" />                                <a href="../../wp-content/uploads/2021/03/1-1.jpg" class="gal-link popup-image" data-sub-html="#gal-cap63833009399f9">
+                                    <i class="fal fa-search"></i>
+                                                                        <div id="gal-cap63833009399f9" class="gal-caption-hide">
+                                        <h3>1</h3>
+                                                                            </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="cthiso-item gallery-item">
+                        <div class="grid-item-holder">
+                            <div class="box-item">
+                                <img width="1200" height="800" class="attachment-homeradar-gallery-one size-homeradar-gallery-one lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/8.jpg" data-lazy="../../wp-content/uploads/2021/03/8.jpg" />                                <a href="../../wp-content/uploads/2021/03/8.jpg" class="gal-link popup-image" data-sub-html="#gal-cap6383300939e05">
+                                    <i class="fal fa-search"></i>
+                                                                        <div id="gal-cap6383300939e05" class="gal-caption-hide">
+                                        <h3>8</h3>
+                                                                            </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="cthiso-item gallery-item">
+                        <div class="grid-item-holder">
+                            <div class="box-item">
+                                <img width="1200" height="800" class="attachment-homeradar-gallery-one size-homeradar-gallery-one lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/4.jpg" data-lazy="../../wp-content/uploads/2021/03/4.jpg" />                                <a href="../../wp-content/uploads/2021/03/4.jpg" class="gal-link popup-image" data-sub-html="#gal-cap638330093a087">
+                                    <i class="fal fa-search"></i>
+                                                                        <div id="gal-cap638330093a087" class="gal-caption-hide">
+                                        <h3>4</h3>
+                                                                            </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="cthiso-item gallery-item cthiso-item-second">
+                        <div class="grid-item-holder">
+                            <div class="box-item">
+                                <img width="1200" height="800" class="attachment-homeradar-gallery-two size-homeradar-gallery-two lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/3-1.jpg" data-lazy="../../wp-content/uploads/2021/03/3-1.jpg" />                                <a href="../../wp-content/uploads/2021/03/3-1.jpg" class="gal-link popup-image" data-sub-html="#gal-cap638330093a84b">
+                                    <i class="fal fa-search"></i>
+                                                                        <div id="gal-cap638330093a84b" class="gal-caption-hide">
+                                        <h3>3</h3>
+                                                                            </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="cthiso-item gallery-item">
+                        <div class="grid-item-holder">
+                            <div class="box-item">
+                                <img width="1200" height="800" class="attachment-homeradar-gallery-one size-homeradar-gallery-one lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/5.jpg" data-lazy="../../wp-content/uploads/2021/03/5.jpg" />                                <a href="../../wp-content/uploads/2021/03/5.jpg" class="gal-link popup-image" data-sub-html="#gal-cap638330093ad23">
+                                    <i class="fal fa-search"></i>
+                                                                        <div id="gal-cap638330093ad23" class="gal-caption-hide">
+                                        <h3>5</h3>
+                                                                            </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="cthiso-item gallery-item">
+                        <div class="grid-item-holder">
+                            <div class="box-item">
+                                <img width="1200" height="800" class="attachment-homeradar-gallery-one size-homeradar-gallery-one lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/9.jpg" data-lazy="../../wp-content/uploads/2021/03/9.jpg" />                                <a href="../../wp-content/uploads/2021/03/9.jpg" class="gal-link popup-image" data-sub-html="#gal-cap638330093b1cc">
+                                    <i class="fal fa-search"></i>
+                                                                        <div id="gal-cap638330093b1cc" class="gal-caption-hide">
+                                        <h3>9</h3>
+                                                                            </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                         
+                </div>
+            </div>
+                       
+            
+        </div>
+    </div>
+    <!-- lsingle-block-box end -->  
+</div>
+<div class="azp_element lfacts azp-element-azp-86cr2falx4w authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box no-padding lfacts-block">
+                <div class="lsingle-block-content">
+            <div class="lsingle-facts four-cols">
+                                <!-- inline-facts -->
+                <div class="inline-facts-wrap flex-fact-wrap">
+                    <div class="inline-facts">
+                        <i class="lfact-icon fal fa-home-lg"></i>                        <div class="lfact-details">
+                            <h6 class="lfact-title">Type</h6>                            <span class="lfact-num">Apartment/ House</span>                        </div>
+                        
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+                            <!-- inline-facts -->
+                <div class="inline-facts-wrap flex-fact-wrap">
+                    <div class="inline-facts">
+                        <i class="lfact-icon fal fa-users"></i>                        <div class="lfact-details">
+                            <h6 class="lfact-title">Accomodation</h6>                            <span class="lfact-num">6 Guests</span>                        </div>
+                        
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+                            <!-- inline-facts -->
+                <div class="inline-facts-wrap flex-fact-wrap">
+                    <div class="inline-facts">
+                        <i class="lfact-icon fal fa-bed"></i>                        <div class="lfact-details">
+                            <h6 class="lfact-title">Bedrooms</h6>                            <span class="lfact-num">3 Bedrooms / 4 Beds</span>                        </div>
+                        
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+                            <!-- inline-facts -->
+                <div class="inline-facts-wrap flex-fact-wrap">
+                    <div class="inline-facts">
+                        <i class="lfact-icon fal fa-bath"></i>                        <div class="lfact-details">
+                            <h6 class="lfact-title">Bathrooms</h6>                            <span class="lfact-num">3 Full</span>                        </div>
+                        
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+                        </div>
+        </div>
+    </div>
+    <!-- lsingle-block-box end -->  
+</div>
+<div class="azp_element ldescription azp-element-azp-se6qk9apvyj authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+	<!-- lsingle-block-box --> 
+    <div class="lsingle-block-box ldesc-block">
+    	        <div class="lsingle-block-title">
+            <h3>About This Listing</h3>
+        </div>
+                <div class="lsingle-block-content">
+            <p>Praesent eros turpis, commodo vel justo at, pulvinar mollis eros. Mauris aliquet eu quam id ornare. Morbi ac quam enim. Cras vitae nulla condimentum, semper dolor non, faucibus dolor. Vivamus adipiscing eros quis orci fringilla, sed pretium lectus viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec velit non odio aliquam suscipit. Sed non neque faucibus, condimentum lectus at, accumsan enim.   </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+<p><a href="#" class="btn float-btn color-bg">Visit Website</a></p>
+                    </div>
+    </div>
+    <!-- lsingle-block-box end -->  
+
+</div>
+<div class="azp_element ldescription azp-element-azp-rys4zy3bn4l authplan-hide-false" id="details_sec">
+    <div class="for-hide-on-author"></div>
+	<!-- lsingle-block-box --> 
+    <div class="lsingle-block-box ldesc-block">
+    	        <div class="lsingle-block-title">
+            <h3>Details</h3>
+        </div>
+                <div class="lsingle-block-content">
+
+            <div class="list-single-main-item_content fl-wrap">
+                <div class="details-list">
+                                        <ul class="dis-flex-wrap">
+                        <li class="property-id-li"><span>Property Id:</span>5115</li>                        <li class="property-size-li"><span>Area Size:</span>460 ft2</li>                        <li class="property-beds-li"><span>Bedrooms:</span>3</li>                                                <li class="property-baths-li"><span>Bathrooms:</span>2</li>                        <li class="property-garage-li"><span>Garage Size (No of cars):</span>2</li>                        <li class="property-date-li"><span>Available from:</span>12 December, 2018</li>
+                        <li class="property-price-li"><span>Price:</span>Rs7,488</li>                        <li class="property-type-li"><span>Type:</span>Sale</li>                    </ul>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- lsingle-block-box end -->  
+
+</div>
+<div class="azp_element lfloors azp-element-azp-dg1r5egf79j authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box lfaqs-block">
+                <div class="lsingle-block-title">
+            <h3>Floor Plans</h3>
+        </div>
+                <div class="lsingle-block-content no-padding">
+
+            <div class="accordion accordion-wrap mar-top">
+                                    <a class="toggle act-accordion" href="#"> First Floor Plan<span></span></a>
+                    <div class="accordion-inner visible">
+                        <img width="770" height="434" class="attachment-full size-full lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/1.jpg" data-lazy="../../wp-content/uploads/2021/03/1.jpg" />                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt.                    </div>
+                                    <a class="toggle" href="#"> Second Floor Plan<span></span></a>
+                    <div class="accordion-inner">
+                        <img width="770" height="434" class="attachment-full size-full lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/2.jpg" data-lazy="../../wp-content/uploads/2021/03/2.jpg" />                        Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra                    </div>
+                                    <a class="toggle" href="#"> Garage Plan<span></span></a>
+                    <div class="accordion-inner">
+                        <img width="770" height="434" class="attachment-full size-full lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/3.jpg" data-lazy="../../wp-content/uploads/2021/03/3.jpg" />                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.                    </div>
+                            </div>
+
+        </div>
+    </div>
+    <!-- lsingle-block-box end -->  
+</div>
+<div class="azp_element lpromo-video azp-element-azp-7z5eb80jan2 authplan-hide-false" id="video_sec">
+    <div class="for-hide-on-author"></div>
+        
+        <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box lpromovid-block lpromovid-popup">
+                <div class="lsingle-block-title">
+            <h3>Video</h3>
+        </div>
+                <div class="video-box fl-wrap">
+            <img width="1200" height="630" class="respimg lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/7.jpg" data-lazy="../../wp-content/uploads/2021/03/7.jpg" />            <a href="https://vimeo.com/161566855" class="video-box-btn image-popup color-bg"><i class="fas fa-play"></i></a>
+        </div>
+    </div>
+    <!-- lsingle-block-box end --> 
+     
+    
+</div>
+<div class="azp_element lfeatures azp-element-azp-6u3ma3cqmup authplan-hide-false" > 
+    <div class="for-hide-on-author"></div>
+    <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box lfeatures-block">
+                <div class="lsingle-block-title">
+            <h3>Features</h3>
+        </div>
+                
+        <div class="lsingle-block-content">
+            <div class="listing-features fl-wrap">
+                <ul class="fea-parent no-list-style">
+            <li><a href="../../listing_fea/air-conditioned/index.html"><i class="fal fa-snowflake"></i>Air Conditioned</a></li><li><a href="../../listing_fea/airport-shuttle/index.html"><i class="fal fa-plane"></i>Airport Shuttle</a></li><li><a href="../../listing_fea/breakfast/index.html"><i class="fal fa-concierge-bell"></i>Breakfast</a></li><li><a href="../../listing_fea/elevator-in-building/index.html"><i class="fal fa-rocket"></i>Elevator in building</a></li><li><a href="../../listing_fea/free-parking/index.html"><i class="fal fa-parking"></i>Free Parking</a></li><li><a href="../../listing_fea/free-wi-fi/index.html"><i class="fal fa-wifi"></i>Free Wi Fi</a></li>                </ul>
+            </div><!-- listing-features end -->  
+        </div><!-- lsingle-block-content end -->  
+    </div><!-- lsingle-block-box end -->  
+</div>
+<div class="azp_element lmap-single azp-element-azp-8z5xh2bsdtf authplan-hide-false" id="map_sec"> 
+    <div class="for-hide-on-author"></div>
+    <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box lmap-box lmap-block">
+                <div class="lsingle-block-content">
+            <div class="map-container">
+
+                <div id="singleMap638330093f43d" 
+                    class="singleMap singleMap-mapbox" 
+                    data-lat="7.539988999999998" 
+                    data-lng="-5.547079999999999" 
+                    data-loc="40 Journal Square , NJ, USA" 
+                    data-zoom="16"  
+                    data-marker="../../wp-content/uploads/2021/02/marker-single.png"></div>
+
+
+                
+            </div>
+
+        </div><!-- lsingle-block-content end -->  
+    </div><!-- lsingle-block-box end -->  
+</div>
+<div class="azp_element lcalendar azp-element-azp-0i2lvasoo92 authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box lcalendar-block">
+                <div class="lsingle-block-title">
+            <h3>Available Dates</h3>
+        </div>
+                <div class="lsingle-block-content lsingle-block-calendar-content">
+            <div class="cth-availability-calendar"
+                data-show="2" 
+                data-max="12" 
+                data-name="checkin" 
+                data-format="YYYY-MM-DD" 
+                data-default=""
+                data-action="listing_dates" 
+                data-postid="5115" 
+                data-selected="availability_dates"
+                data-single="yes"
+                min_nights="2" 
+                scroll_ele_id="widget-general-booking" 
+            ></div>
+                    </div>
+    </div>
+    <!-- lsingle-block-box end -->  
+</div> 
+<div class="azp_element lstreetview azp-element-azp-gbhm4siq445 authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <!-- lsingle-block-box --> 
+    <div class="lsingle-block-box lstreetmap-block">
+                <div class="lsingle-block-title">
+            <h3>Street View</h3>
+        </div>
+                <div class="lsingle-block-content">
+            <div class="lsingle-streetview">
+                <div class="lstreet-view lstreet--mapbox" id="street-view638330093f796" data-lat="7.539988999999998" data-lng="-5.547079999999999" data-zoom="16"></div>
+            </div>
+        </div>
+    </div>
+    <!-- lsingle-block-box end -->  
+</div>
+<div class="azp_element lcomments azp-element-azp-6t8gb3pcjw3 authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <div id="lreviews_sec"></div>
+<!-- lsingle-block-box -->   
+<div class="lcomments-wrap lsingle-block-box" id="lreviews_sec_wrap">
+    <div class="lsingle-block-title lcomments-title">
+        <h3>Items Reviewed - <span>5</span></h3>
+    </div>
+        <div class="review-total-wrap">
+        <div class="review-total flex-items-center">
+        <span class="review-number blue-bg">4.5</span>
+        <div class="listing-rating card-popup-rainingvis" data-rating="4.5" data-stars="5"><span class="re_stars-title review-text">Excellent</span></div>
+    </div>
+    </div>
+    	<div class="lsingle-block-content">
+		
+		<div class="reviews-comments-wrap">
+	                <div class="comment even thread-even depth-1 reviews-comments-item comment-nochild" id="comment-172">
+        
+            <div class="review-comments-avatar">
+                <img alt="Adam Koncy" srcset="https://secure.gravatar.com/avatar/348521d007f4d580870a365c25381372?s=100&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=g 2x" class="avatar avatar-50 photo lazy" height="50" width="50" loading="lazy" data-src="https://secure.gravatar.com/avatar/348521d007f4d580870a365c25381372?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=g" data-lazy="https://secure.gravatar.com/avatar/348521d007f4d580870a365c25381372?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=g">            </div>
+            <div class="reviews-comments-item-text">
+
+                <div class="reviews-comments-header fl-wrap flex-items-center">
+                    <div class="lreview-title-wrap dis-flex">
+                        <h4>Adam Koncy                        
+                        </h4>
+                                                                        <div class="review-score-user">
+                            <!-- <span class="review-score-user_item">4.5</span> -->
+                            <div class="listing-rating card-popup-rainingvis" data-rating="4.5" data-stars="5"><span class="re_stars-title review-text">Excellent</span></div>
+                        </div>
+                                            </div>
+                    <div class="lreview-tools lhead-more-wrap">
+                        <div class="box-widget-menu-btn smact"><i class="far fa-ellipsis-h"></i></div>
+                        <div class="show-more-snopt-tooltip bxwt">
+                            <a rel='nofollow' class='comment-reply-link' href='indexa56d.html?replytocom=172#respond' data-commentid="172" data-postid="5115" data-belowelement="comment-172" data-respondelement="respond" data-replyto="Reply to Adam Koncy" aria-label='Reply to Adam Koncy'><i class="fas fa-reply"></i> Reply</a>                            <a href="#"> <i class="fas fa-exclamation-triangle"></i> Report </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p>&#8221; Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. &#8220;</p>
+                                    <div class="review-images lightgallery review-images-3">
+                        
+                                                    <a href="#" class="popup-image review-image">
+                                                            </a>
+                                                    <a href="#" class="popup-image review-image">
+                                                            </a>
+                                                    <a href="#" class="popup-image review-image">
+                                                            </a>
+                                            </div>
+                                <div class="reviews-comments-item-footer fl-wrap flex-items-center">
+                    <div class="reviews-comments-item-date"><span><i class="far fa-calendar-check"></i>13 December, 2018 4:22 am</span></div>
+                    <span class="homeradar_addons-like-wrapper comment-like-wrapper rate-review"><a href="#" class="homeradar_addons-like-button" data-nonce="158688649a" data-post-id="172" data-iscomment="1" title="Rate now"><span class="comment-like-icon"><i class="fal fa-thumbs-up" aria-hidden="true"></i></span><span class="comment-like-text">Helpful review</span><span class="comment-like-count"><span class="homeradar_addons-like-count">0</span></span></a><span class="cth-like-loader"><i class="fal fa-spinner fa-pulse"></i></span></span>                </div>
+                 
+            </div>       
+        
+    </div><!-- #comment-## -->
+        <div class="comment odd alt thread-odd thread-alt depth-1 reviews-comments-item comment-nochild" id="comment-183">
+        
+            <div class="review-comments-avatar">
+                <img alt="Liza Rose" srcset="https://secure.gravatar.com/avatar/348521d007f4d580870a365c25381372?s=100&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=g 2x" class="avatar avatar-50 photo lazy" height="50" width="50" loading="lazy" data-src="https://secure.gravatar.com/avatar/348521d007f4d580870a365c25381372?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=g" data-lazy="https://secure.gravatar.com/avatar/348521d007f4d580870a365c25381372?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=g">            </div>
+            <div class="reviews-comments-item-text">
+
+                <div class="reviews-comments-header fl-wrap flex-items-center">
+                    <div class="lreview-title-wrap dis-flex">
+                        <h4>Liza Rose                        
+                        </h4>
+                                                                        <div class="review-score-user">
+                            <!-- <span class="review-score-user_item">4.5</span> -->
+                            <div class="listing-rating card-popup-rainingvis" data-rating="4.5" data-stars="5"><span class="re_stars-title review-text">Excellent</span></div>
+                        </div>
+                                            </div>
+                    <div class="lreview-tools lhead-more-wrap">
+                        <div class="box-widget-menu-btn smact"><i class="far fa-ellipsis-h"></i></div>
+                        <div class="show-more-snopt-tooltip bxwt">
+                            <a rel='nofollow' class='comment-reply-link' href='index71ae.html?replytocom=183#respond' data-commentid="183" data-postid="5115" data-belowelement="comment-183" data-respondelement="respond" data-replyto="Reply to Liza Rose" aria-label='Reply to Liza Rose'><i class="fas fa-reply"></i> Reply</a>                            <a href="#"> <i class="fas fa-exclamation-triangle"></i> Report </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p>” Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&#8221;</p>
+                                    <div class="review-images lightgallery review-images-3">
+                        
+                                                    <a href="#" class="popup-image review-image">
+                                                            </a>
+                                                    <a href="#" class="popup-image review-image">
+                                                            </a>
+                                                    <a href="#" class="popup-image review-image">
+                                                            </a>
+                                            </div>
+                                <div class="reviews-comments-item-footer fl-wrap flex-items-center">
+                    <div class="reviews-comments-item-date"><span><i class="far fa-calendar-check"></i>14 December, 2018 3:26 am</span></div>
+                    <span class="homeradar_addons-like-wrapper comment-like-wrapper rate-review"><a href="#" class="homeradar_addons-like-button" data-nonce="158688649a" data-post-id="183" data-iscomment="1" title="Rate now"><span class="comment-like-icon"><i class="fal fa-thumbs-up" aria-hidden="true"></i></span><span class="comment-like-text">Helpful review</span><span class="comment-like-count"><span class="homeradar_addons-like-count">0</span></span></a><span class="cth-like-loader"><i class="fal fa-spinner fa-pulse"></i></span></span>                </div>
+                 
+            </div>       
+        
+    </div><!-- #comment-## -->
+        <div class="comment byuser comment-author-admin bypostauthor even thread-even depth-1 reviews-comments-item comment-nochild" id="comment-530">
+        
+            <div class="review-comments-avatar">
+                <img alt="CTH Themes" class="avatar avatar-50 photo lazy" height="50" width="50" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg">            </div>
+            <div class="reviews-comments-item-text">
+
+                <div class="reviews-comments-header fl-wrap flex-items-center">
+                    <div class="lreview-title-wrap dis-flex">
+                        <h4>CTH Themes                        
+                        </h4>
+                                                                        <div class="review-score-user">
+                            <!-- <span class="review-score-user_item">4.8</span> -->
+                            <div class="listing-rating card-popup-rainingvis" data-rating="4.8" data-stars="5"><span class="re_stars-title review-text">Excellent</span></div>
+                        </div>
+                                            </div>
+                    <div class="lreview-tools lhead-more-wrap">
+                        <div class="box-widget-menu-btn smact"><i class="far fa-ellipsis-h"></i></div>
+                        <div class="show-more-snopt-tooltip bxwt">
+                            <a rel='nofollow' class='comment-reply-link' href='index0bd0.html?replytocom=530#respond' data-commentid="530" data-postid="5115" data-belowelement="comment-530" data-respondelement="respond" data-replyto="Reply to CTH Themes" aria-label='Reply to CTH Themes'><i class="fas fa-reply"></i> Reply</a>                            <a href="#"> <i class="fas fa-exclamation-triangle"></i> Report </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p>This is testing review from app</p>
+<p>CTHthemes</p>
+                                <div class="reviews-comments-item-footer fl-wrap flex-items-center">
+                    <div class="reviews-comments-item-date"><span><i class="far fa-calendar-check"></i>12 April, 2020 11:44 pm</span></div>
+                    <span class="homeradar_addons-like-wrapper comment-like-wrapper rate-review"><a href="#" class="homeradar_addons-like-button" data-nonce="158688649a" data-post-id="530" data-iscomment="1" title="Rate now"><span class="comment-like-icon"><i class="fal fa-thumbs-up" aria-hidden="true"></i></span><span class="comment-like-text">Helpful review</span><span class="comment-like-count"><span class="homeradar_addons-like-count">0</span></span></a><span class="cth-like-loader"><i class="fal fa-spinner fa-pulse"></i></span></span>                </div>
+                 
+            </div>       
+        
+    </div><!-- #comment-## -->
+        <div class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1 reviews-comments-item comment-nochild" id="comment-531">
+        
+            <div class="review-comments-avatar">
+                <img alt="CTH Themes" class="avatar avatar-50 photo lazy" height="50" width="50" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg">            </div>
+            <div class="reviews-comments-item-text">
+
+                <div class="reviews-comments-header fl-wrap flex-items-center">
+                    <div class="lreview-title-wrap dis-flex">
+                        <h4>CTH Themes                        
+                        </h4>
+                                                                        <div class="review-score-user">
+                            <!-- <span class="review-score-user_item">4.3</span> -->
+                            <div class="listing-rating card-popup-rainingvis" data-rating="4.3" data-stars="5"><span class="re_stars-title review-text">Good</span></div>
+                        </div>
+                                            </div>
+                    <div class="lreview-tools lhead-more-wrap">
+                        <div class="box-widget-menu-btn smact"><i class="far fa-ellipsis-h"></i></div>
+                        <div class="show-more-snopt-tooltip bxwt">
+                            <a rel='nofollow' class='comment-reply-link' href='index965c.html?replytocom=531#respond' data-commentid="531" data-postid="5115" data-belowelement="comment-531" data-respondelement="respond" data-replyto="Reply to CTH Themes" aria-label='Reply to CTH Themes'><i class="fas fa-reply"></i> Reply</a>                            <a href="#"> <i class="fas fa-exclamation-triangle"></i> Report </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p>This is new testing review</p>
+<p>CTHthemes</p>
+                                <div class="reviews-comments-item-footer fl-wrap flex-items-center">
+                    <div class="reviews-comments-item-date"><span><i class="far fa-calendar-check"></i>12 April, 2020 11:57 pm</span></div>
+                    <span class="homeradar_addons-like-wrapper comment-like-wrapper rate-review"><a href="#" class="homeradar_addons-like-button" data-nonce="158688649a" data-post-id="531" data-iscomment="1" title="Rate now"><span class="comment-like-icon"><i class="fal fa-thumbs-up" aria-hidden="true"></i></span><span class="comment-like-text">Helpful review</span><span class="comment-like-count"><span class="homeradar_addons-like-count">1</span></span></a><span class="cth-like-loader"><i class="fal fa-spinner fa-pulse"></i></span></span>                </div>
+                 
+            </div>       
+        
+    </div><!-- #comment-## -->
+        <div class="comment byuser comment-author-admin bypostauthor even thread-even depth-1 reviews-comments-item comment-nochild" id="comment-532">
+        
+            <div class="review-comments-avatar">
+                <img alt="CTH Themes" class="avatar avatar-50 photo lazy" height="50" width="50" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg">            </div>
+            <div class="reviews-comments-item-text">
+
+                <div class="reviews-comments-header fl-wrap flex-items-center">
+                    <div class="lreview-title-wrap dis-flex">
+                        <h4>CTH Themes                        
+                        </h4>
+                                                                        <div class="review-score-user">
+                            <!-- <span class="review-score-user_item">4.3</span> -->
+                            <div class="listing-rating card-popup-rainingvis" data-rating="4.3" data-stars="5"><span class="re_stars-title review-text">Good</span></div>
+                        </div>
+                                            </div>
+                    <div class="lreview-tools lhead-more-wrap">
+                        <div class="box-widget-menu-btn smact"><i class="far fa-ellipsis-h"></i></div>
+                        <div class="show-more-snopt-tooltip bxwt">
+                            <a rel='nofollow' class='comment-reply-link' href='indexc9d1.html?replytocom=532#respond' data-commentid="532" data-postid="5115" data-belowelement="comment-532" data-respondelement="respond" data-replyto="Reply to CTH Themes" aria-label='Reply to CTH Themes'><i class="fas fa-reply"></i> Reply</a>                            <a href="#"> <i class="fas fa-exclamation-triangle"></i> Report </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p>This is new testing again, to make sure that review criteria is working</p>
+<p>CTHthemes again!</p>
+                                <div class="reviews-comments-item-footer fl-wrap flex-items-center">
+                    <div class="reviews-comments-item-date"><span><i class="far fa-calendar-check"></i>13 April, 2020 12:02 am</span></div>
+                    <span class="homeradar_addons-like-wrapper comment-like-wrapper rate-review"><a href="#" class="homeradar_addons-like-button" data-nonce="158688649a" data-post-id="532" data-iscomment="1" title="Rate now"><span class="comment-like-icon"><i class="fal fa-thumbs-up" aria-hidden="true"></i></span><span class="comment-like-text">Helpful review</span><span class="comment-like-count"><span class="homeradar_addons-like-count">1</span></span></a><span class="cth-like-loader"><i class="fal fa-spinner fa-pulse"></i></span></span>                </div>
+                 
+            </div>       
+        
+    </div><!-- #comment-## -->
+	    </div>
+	    
+	  			
+	</div>
+	    
+</div>
+<!-- lsingle-block-box end -->   
+
+
+	<!-- lsingle-block-box -->   
+    <div class="lreviewform-wrap lsingle-block-box" id="lreviews_form">
+        			<div id="respond" class="comment-respond">
+		<div class="comment-reply-title-wrap"><h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="#comment-183">Liza Rose</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index8c9b.html?currency=INR#respond">Cancel reply</a></small></h3></div><form action="https://homeradar.cththemes.co/wp-comments-post.php" method="post" id="commentform" class="add-comment custom-form listing-review-form" novalidate><div class="cm-notes-before email-safe">Your email is safe with us.</div>        <div class="review-score-form fl-wrap flex-items-center">
+            <div class="review-range-container">
+                                <!-- review-range-item-->
+                <div class="review-range-item flex-items-center">
+                    <div class="range-slider-title">Quality</div>
+                    <div class="range-slider-wrap ">
+                        <input name="quality" type="text" class="rate-range" data-min="1" data-max="5" data-step="1" value="4">
+                    </div>
+                </div>
+                <!-- review-range-item end --> 
+                                <!-- review-range-item-->
+                <div class="review-range-item flex-items-center">
+                    <div class="range-slider-title">Location</div>
+                    <div class="range-slider-wrap ">
+                        <input name="location" type="text" class="rate-range" data-min="1" data-max="5" data-step="1" value="2">
+                    </div>
+                </div>
+                <!-- review-range-item end --> 
+                                <!-- review-range-item-->
+                <div class="review-range-item flex-items-center">
+                    <div class="range-slider-title">Price</div>
+                    <div class="range-slider-wrap ">
+                        <input name="price" type="text" class="rate-range" data-min="1" data-max="5" data-step="1" value="5">
+                    </div>
+                </div>
+                <!-- review-range-item end --> 
+                                <!-- review-range-item-->
+                <div class="review-range-item flex-items-center">
+                    <div class="range-slider-title">Service</div>
+                    <div class="range-slider-wrap ">
+                        <input name="service" type="text" class="rate-range" data-min="1" data-max="5" data-step="1" value="3">
+                    </div>
+                </div>
+                <!-- review-range-item end --> 
+                                
+                                                    
+            </div>
+                        <div class="review-total lreview-add-score">
+                <div class="review-total-inner">
+                    <span class="reviews-total-score" id="reviews-total-score">3.5</span> 
+                    <strong>Your Score</strong>
+                </div>
+            </div>
+
+        </div>   
+        <div class="row"><div class="col-md-6 mb-20"><label for="author">Your Name*<span class="dec-icon"><i class="fas fa-user"></i></span></label><input type="text" class="has-icon" id="author" name="author" placeholder="" value=""  required aria-required='true' size="40"></div>
+<div class="col-md-6 mb-20"><label for="email">Your Email*<span class="dec-icon"><i class="fas fa-envelope"></i></span></label><input class="has-icon" id="email" name="email" type="email" placeholder="" value=""  required aria-required='true' size="40"></div></div>
+<textarea name="comment" id="comment" placeholder="Your Review:" cols="40" rows="3"  aria-required='true'></textarea><p class="form-submit"><button class="btn color2-bg" type="submit">Submit Review <i class="fal fa-paper-plane"></i></button> <input type='hidden' name='comment_post_ID' value='5115' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='183' />
+</p></form>	</div><!-- #respond -->
+	    </div>
+    <!-- lsingle-block-box end --> 
+
+ 
+</div>
+<div class="azp_element azp_raw-html azp-element-azp-mepx58sw6jl" >
+    <div class="limit-box"></div></div>			</div>
+								<div  class="azp_element azp-element-azp-2x9n130lnp6 azp_col azp-col-33 lcontent-widget">
+				<div class="azp_element lhostedby azp-element-azp-7i9gebt2w88 authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+
+	<!--box-widget-item -->
+    <div class="box-widget-item fl-wrap block_box">
+                        <div class="box-widget">
+            <div class="profile-widget">
+                <div class="profile-widget-header color-bg smpar fl-wrap">
+                    <div class="pwh_bg"></div>
+                    <div class="call-btn"><a href="tel:999999999" class="tolt color-bg" data-microtip-position="right"  data-tooltip="Call Now"><i class="fas fa-phone-alt"></i></a></div>                                        <div class="profile-widget-card">
+                        <div class="profile-widget-image">
+                            <img alt="CTH Themes" class="avatar avatar-150 photo lazy" height="150" width="150" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg">                        </div>
+                        <div class="profile-widget-header-title">
+                            <h4><a href="../../author/admin/index.html">CTH Themes</a></h4>
+                            <div class="clearfix"></div>
+                            <div class="pwh_counter"><span>17</span>Property Listings</div>
+                            <div class="clearfix"></div>
+                            <div class="listing-rating card-popup-rainingvis" data-rating="4" data-stars="5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-widget-content fl-wrap">
+                    <div class="contats-list fl-wrap">
+                        <ul class="no-list-style">
+                            <li><span><i class="fal fa-map-marker"></i>Address :</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=123+Brooklyn%2C+New+York%2C+US">123 Brooklyn, New York, US</a></li>                            <li><span><i class="fal fa-phone"></i>Phone :</span> <a href="tel:999999999">999999999</a></li>                            <li><span><i class="fal fa-envelope"></i>Mail :</span> <a href="mailto:test.cth@gmail.com">test.cth@gmail.com</a></li>                            
+                            <li><span><i class="fal fa-browser"></i>Website :</span> <a href="https://cththemes.com/" target="_blank">https://cththemes.com</a></li>                        </ul>
+                    </div>
+                    <div class="profile-widget-footer flex-items-center jtf-space-between">
+                        <a href="../../author/admin/index.html" class="btn float-btn color-bg small-btn">View Profile</a>
+                        <div class="profile-custom-link"><a href="#sec-contact" class="custom-scroll-link tolt" data-microtip-position="left"  data-tooltip="Viewing Property"><i class="fal fa-paper-plane"></i></a></div>
+                    </div>
+                </div>
+            </div>
+                    
+
+        </div>
+    </div>
+    <!--box-widget-item end -->  
+
+</div>
+<div class="azp_element lsimilar_listings azp-element-azp-988802tjuo5 authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <!--box-widget-item -->
+    <div class="box-widget-item fl-wrap block_box">
+                <div class="box-widget-item-header">
+            <h3>Featured Properties</h3>
+        </div>
+                <div class="box-widget  fl-wrap">
+            <div class="box-widget-content">
+                <!--widget-posts-->
+                <div class="widget-posts  fl-wrap">
+                    <ul class="no-list-style">
+                                            <li class="dis-flex">
+                                                        <div class="widget-posts-img">
+                                <a href="../gorgeous-house-for-sale/index.html">
+                                    <img width="98" height="65" class="attachment-homeradar-recent size-homeradar-recent wp-post-image lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/1-1-98x65.jpg" data-lazy="../../wp-content/uploads/2021/03/1-1-98x65.jpg" />                                </a>  
+                            </div>
+                                                        <div class="widget-posts-descr">
+                                <h4><a href="../gorgeous-house-for-sale/index.html">Gorgeous House For Sale</a></h4>
+                                                                <div class="geodir-category-location fl-wrap"><a href="https://www.google.com/maps/search/?api=1&amp;query=40.7130736,-73.9873037" target="_blank"><i class="fas fa-map-marker-alt"></i>34-42 Montgomery St , NY, USA</a></div>
+                                                                                                
+
+                                <div class="widget-posts-descr-price"><span>Price: </span>Rs52,415</div>
+                            </div>
+                        </li>
+                                                <li class="dis-flex">
+                                                        <div class="widget-posts-img">
+                                <a href="../contemporary-apartment/index.html">
+                                    <img width="98" height="65" class="attachment-homeradar-recent size-homeradar-recent wp-post-image lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/6-98x65.jpg" data-lazy="../../wp-content/uploads/2021/03/6-98x65.jpg" />                                </a>  
+                            </div>
+                                                        <div class="widget-posts-descr">
+                                <h4><a href="../contemporary-apartment/index.html">Contemporary Apartment</a></h4>
+                                                                <div class="geodir-category-location fl-wrap"><a href="https://www.google.com/maps/search/?api=1&amp;query=40.78708237136644,-73.97548763779922" target="_blank"><i class="fas fa-map-marker-alt"></i>70 Bright St New York, USA</a></div>
+                                                                                                
+
+                                <div class="widget-posts-descr-price"><span>Price: </span>Rs44,927,190</div>
+                            </div>
+                        </li>
+                                                <li class="dis-flex">
+                                                        <div class="widget-posts-img">
+                                <a href="../urban-house/index.html">
+                                    <img width="98" height="65" class="attachment-homeradar-recent size-homeradar-recent wp-post-image lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/9-98x65.jpg" data-lazy="../../wp-content/uploads/2021/03/9-98x65.jpg" />                                </a>  
+                            </div>
+                                                        <div class="widget-posts-descr">
+                                <h4><a href="../urban-house/index.html">Urban House</a></h4>
+                                                                <div class="geodir-category-location fl-wrap"><a href="https://www.google.com/maps/search/?api=1&amp;query=40.7172387,-74.04772960000003" target="_blank"><i class="fas fa-map-marker-alt"></i>75 Prince St, NY, USA</a></div>
+                                                                                                
+
+                                <div class="widget-posts-descr-price"><span>Price: </span>Rs37,439,325</div>
+                            </div>
+                        </li>
+                                                <li class="dis-flex">
+                                                        <div class="widget-posts-img">
+                                <a href="../lake-view-family-house/index.html">
+                                    <img width="98" height="65" class="attachment-homeradar-recent size-homeradar-recent wp-post-image lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/2-1-98x65.jpg" data-lazy="../../wp-content/uploads/2021/03/2-1-98x65.jpg" />                                </a>  
+                            </div>
+                                                        <div class="widget-posts-descr">
+                                <h4><a href="../lake-view-family-house/index.html">Lake View Family House</a></h4>
+                                                                <div class="geodir-category-location fl-wrap"><a href="https://www.google.com/maps/search/?api=1&amp;query=29.95106579999999,-90.0715323" target="_blank"><i class="fas fa-map-marker-alt"></i>75 Prince St, NY, USA</a></div>
+                                                                                                
+
+                                <div class="widget-posts-descr-price"><span>Price: </span>Rs37,439,325</div>
+                            </div>
+                        </li>
+                         
+                    </ul>
+                </div>
+                <!-- widget-posts end-->
+                                    <a href="../index.html" class="btn float-btn color-bg small-btn similar-vall">View All Properties</a>
+                            </div>
+        </div>
+    </div>
+    <!--box-widget-item end -->  
+</div> 
+<div class="azp_element calc_mortgage azp-element-azp-v2dv2yv0kk authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+
+	<div class="box-widget-content fl-wrap color-bg">
+        <div class="color-form reset-action">
+            <div class="color-form-title fl-wrap">
+                                <h3>Calculate Your Mortgage</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere convallis purus non cursus. </p>
+                            </div>
+            <form method="post" name="mortgage-form" class="lmortgage-form">
+                <div class="fl-wrap loan-amount-wrap">
+                    <label for="amt">Loan Amount</label>   
+                    <input id="amt" name="amt" type="text" value="23961168"> 
+                    <div class="use-current-price tolt" data-price="23961168" data-microtip-position="left" data-tooltip="Use current price"><i class="fal fa-tag"></i></div>
+                </div>
+                <label for="apr">Percentage rate</label>
+                <div class="price-rage-item fl-wrap">
+                    <input type="text" id="apr" name="apr" class="price-range" data-min="1" data-max="100" data-step="1" value="1" data-prefix="%">
+                </div>
+                <label for="trm">Loan Term (Years)</label>
+                <div class="price-rage-item fl-wrap">
+                    <input type="text" id="trm" name="trm" class="price-range" data-min="0.5" data-max="5" data-step="0.5" value="1" data-prefix="Y">
+                </div>
+                <div class="clearfix"></div>
+                <div class="calc-mortgage-btns flex-items-center jtf-space-between mt-20">
+                    <button type="submit" class="subm-mortgage color2-bg">Calculate</button>
+                    <div class="reset-form reset-btn"> <i class="far fa-sync-alt"></i>Reset Form</div>
+                </div>
+                <div class="monterage-title fl-wrap flex-items-center jtf-space-between">
+                    <h5>Monthly payment:</h5>
+                    <div class="monterage-title-item">Rs<span>0</span></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<div class="azp_element getintouch mt-20 azp-element-azp-kaihpkuizkp box-widget-fixed-init authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <!--box-widget-item -->
+    <div class="box-widget-item fl-wrap lbox-widget-contact" id="sec-contact">
+                <div class="box-widget-title fl-wrap box-widget-title-color color-bg">Contact Property</div>
+                <div class="box-widget-content fl-wrap">
+            <div class="custom-formsss">
+                <form class="author-message-form custom-form" action="#" method="post">
+                                        <fieldset>
+                        <div class="hasIcon mb-20">
+                            <label>Your Name*<span class="dec-icon"><i class="fas fa-user"></i></span></label>
+                            <input name="lmsg_name" class="has-icon" type="text" placeholder="Your Name*" value="" required="required">
+                        </div>
+
+                        <div class="hasIcon mb-20">
+                            <label>Email Address*<span class="dec-icon"><i class="fas fa-envelope"></i></span></label>
+                            <input name="lmsg_email" class="has-icon" type="text" placeholder="Email Address*" value="" required="required">
+                        </div>
+                                                                    </fieldset>
+                    
+                    <div class="row mb-20">
+                        <div class="col-sm-7">
+                            <div class="cth-date-picker-wrap hasIcon">
+                                <label>Date<span class="dec-icon"><i class="fas fa-calendar-check"></i></span></label>
+                                <div class="cth-date-picker cth-date-picker-hide-metas" 
+                                    data-name="checkin" 
+                                    data-format="MM/DD/YYYY" 
+                                    data-default="current"
+                                    data-action="" 
+                                    data-postid="" 
+                                    data-selected="general_date"
+                                    data-required="yes"
+                                    data-placeholder=""
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <label>Time</label>
+                            <select name="time" data-placeholder="9 AM" class="chosen-select on-radius no-search-select">
+                                <option value="09:00:00">9 AM</option>
+                                <option value="10:00:00">10 AM</option>
+                                <option value="11:00:00">11 AM</option>
+                                <option value="12:00:00">12 AM</option>
+                                <option value="13:00:00">13 PM</option>
+                                <option value="14:00:00">14 PM</option>
+                                <option value="15:00:00">15 PM</option>
+                                <option value="16:00:00">16 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                                        <div class="author-message-error"></div>
+                    <button class="btn color-bg fw-btn author-msg-submit" type="submit">Send</button>
+                    <input type="hidden" name="authid" value="1">
+                    <input type="hidden" name="listing_id" value="5115">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+			</div>
+				</div>
+	</div>
+	
+</div>
+<div class="azp_element azp-element-azp-fj8u4zx0uvv azp_row_section azp_row_section-default azp_row_section-15-gap pad-bot-30" >
+	
+		<div class="azp_container">
+					<div class="azp_row azp_row-wrap">
+								<div  class="azp_element azp-element-azp-u6my48wv1f azp_col azp-col-100">
+				<div class="azp_element lsimilar_listings azp-element-azp-7vjtz3o1hg authplan-hide-false" >
+    <div class="for-hide-on-author"></div>
+    <!--box-widget-item -->
+    <div class="lsingle-block-box lsimilarslider-block">
+                <div class="lsingle-block-title">
+            <h3>Similar Properties</h3>
+        </div>
+                <div class="lsingle-block-content">
+                                <div class="single-carousel-wrap carousel-wrap similar-listings-slider-wrap airbnb-style">
+                    <div class="single-carousel carousel" data-options='{"slidesToShow":3,"responsive":[{"breakpoint":1270,"settings":{"slidesToShow":3}},{"breakpoint":850,"settings":{"slidesToShow":1}}]}'>
+                        <div class="slick-item slick-slide-itemsss lslider-item"><!-- listing-item -->
+<div class="listing-item listing-item-loop for-lslider"  data-postid="6355">
+    <article class="geodir-category-listing fl-wrap">
+        <div class="azp_element preview_listing azp-element-azp-withqfz5u2l geodir-category-img" >
+    <a href="../luxury-family-home/index.html" class="listing-thumb-link geodir-category-img_item">
+        
+        <img width="424" height="280" class="respimg lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/3-1-424x280.jpg" data-lazy="../../wp-content/uploads/2021/03/3-1-424x280.jpg" />
+        <div class="overlay"></div>    </a>
+
+    <div class="geodir-category-location">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=40.81986777037329,-74.00715942677003" class="single-map-item tolt" data-newlatitude="40.88496706" data-newlongitude="-73.88191222" data-microtip-position="top-left" data-tooltip="On the map">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>75 Prince St, NY, USA</span></a>                                              
+    </div>
+
+    
+            <div class="list-single-opt_header_cat dis-flex-wrap">
+            <a href="../../listing_status/for-sale/index.html" class="cat-opt status-opt flex-items-center">For Sale</span></a>             <a href="../../listing_cat/home/index.html" class="cat-opt flex-items-center">Home</a>         </div>
+    
+
+        
+                    <a href="#" class="geodir_save-btn tolt logreg-modal-open" data-message="Logging in first to save this listing." data-microtip-position="left" data-tooltip="Login"><span><i class="fal fa-heart"></i></span></a>
+        
+            <a href="#" class="compare-btn tolt compare-btn-6355" 
+    data-microtip-position="left" data-tooltip="Compare" 
+    data-text1="Compare" data-text2="Added to Compare"
+    data-lid="6355" data-ltitle="Luxury Family Home" 
+    data-lthumb="../../wp-content/uploads/2021/03/3-1-150x150.jpg"
+    data-lprice="Rs3,669"
+    data-laddress="75 Prince St, NY, USA"
+    ><span><i class="fal fa-random"></i></span></a>
+        <div class="geodir-category-listing_media-list">
+        <span><i class="fas fa-camera"></i> 6</span>
+    </div>
+    
+
+    
+        
+
+    
+    
+
+            <div class="lcard-saleoff">
+            <div class="saleoff-inner">Sale 20%</div>
+        </div>
+     
+
+    
+    
+        
+        <div class="lcfields-wrap lcfields-abs dis-flex-wrap"></div>
+    
+</div>
+<div class="azp_element preview_listing_content azp-element-azp-byjy53nmnw geodir-category-content" >
+
+    
+    <h3 class="title-sin_item dis-flex-wrap-center">
+                <a href="../luxury-family-home/index.html">Luxury Family Home</a>
+                    <span class="verified-badge tolt" data-microtip-position="top" data-tooltip="Verified"><i class="far fa-check"></i></span>
+            </h3>
+    <div class="geodir-category-content_price">Rs3,669</div>    <div class="geodir-card-text">
+                <div class="geodir-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.</div>
+                        <div class="lcfields-wrap dis-flex-wrap-center"></div>
+                <div class="geodir-category-content-details">
+            <ul class="no-list-style dis-flex-wrap">
+                <li><i class="fal fa-bed"></i><span>4</span></li>                <li><i class="fal fa-bath"></i><span>3</span></li>                <li><i class="fal fa-cube"></i><span> 510 ft2</span></li>            </ul>
+        </div>
+        
+
+                    </div>
+        <div class="geodir-category-footer dis-flex-wrap-center jtf-space-between">
+                <a href="../../author/admin/index.html" class="gcf-company"><img alt="CTH Themes" class="avatar avatar-80 photo lazy" height="80" width="80" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg"><span class="lcard-avatar">By CTH Themes</span></a>
+                                  
+    
+        
+    </div>
+    
+        
+
+</div>
+    </article>
+</div>
+<!-- listing-item end-->  
+</div><div class="slick-item slick-slide-itemsss lslider-item"><!-- listing-item -->
+<div class="listing-item listing-item-loop for-lslider"  data-postid="6152">
+    <article class="geodir-category-listing fl-wrap">
+        <div class="azp_element preview_listing azp-element-azp-withqfz5u2l geodir-category-img" >
+    <a href="../family-house-for-rent/index.html" class="listing-thumb-link geodir-category-img_item">
+        
+        <img width="424" height="280" class="respimg lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/5-424x280.jpg" data-lazy="../../wp-content/uploads/2021/03/5-424x280.jpg" />
+        <div class="overlay"></div>    </a>
+
+    <div class="geodir-category-location">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=40.701594124269405,-73.88509092852472" class="single-map-item tolt" data-newlatitude="40.88496706" data-newlongitude="-73.88191222" data-microtip-position="top-left" data-tooltip="On the map">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>75 Prince St, NY, USA</span></a>                                              
+    </div>
+
+    
+            <div class="list-single-opt_header_cat dis-flex-wrap">
+            <a href="../../listing_status/for-sale/index.html" class="cat-opt status-opt flex-items-center">For Sale</span></a>             <a href="../../listing_cat/house/index.html" class="cat-opt flex-items-center">House</a>         </div>
+    
+
+        
+                    <a href="#" class="geodir_save-btn tolt logreg-modal-open" data-message="Logging in first to save this listing." data-microtip-position="left" data-tooltip="Login"><span><i class="fal fa-heart"></i></span></a>
+        
+            <a href="#" class="compare-btn tolt compare-btn-6152" 
+    data-microtip-position="left" data-tooltip="Compare" 
+    data-text1="Compare" data-text2="Added to Compare"
+    data-lid="6152" data-ltitle="Family House For Rent" 
+    data-lthumb="../../wp-content/uploads/2021/03/5-150x150.jpg"
+    data-lprice="Rs37,439,325"
+    data-laddress="75 Prince St, NY, USA"
+    ><span><i class="fal fa-random"></i></span></a>
+        <div class="geodir-category-listing_media-list">
+        <span><i class="fas fa-camera"></i> 6</span>
+    </div>
+    
+
+    
+        
+
+    
+    
+
+     
+
+    
+    
+        
+        <div class="lcfields-wrap lcfields-abs dis-flex-wrap"></div>
+    
+</div>
+<div class="azp_element preview_listing_content azp-element-azp-byjy53nmnw geodir-category-content" >
+
+    
+    <h3 class="title-sin_item dis-flex-wrap-center">
+                <a href="../family-house-for-rent/index.html">Family House For Rent</a>
+            </h3>
+    <div class="geodir-category-content_price">Rs37,439,325</div>    <div class="geodir-card-text">
+                <div class="geodir-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.</div>
+                        <div class="lcfields-wrap dis-flex-wrap-center"></div>
+                <div class="geodir-category-content-details">
+            <ul class="no-list-style dis-flex-wrap">
+                <li><i class="fal fa-bed"></i><span>4</span></li>                <li><i class="fal fa-bath"></i><span>3</span></li>                <li><i class="fal fa-cube"></i><span> 510 ft2</span></li>            </ul>
+        </div>
+        
+
+                    </div>
+        <div class="geodir-category-footer dis-flex-wrap-center jtf-space-between">
+                <a href="../../author/admin/index.html" class="gcf-company"><img alt="CTH Themes" class="avatar avatar-80 photo lazy" height="80" width="80" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg"><span class="lcard-avatar">By CTH Themes</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Good" data-stars="5" data-rating="4.0"></div>
+          
+    
+        
+    </div>
+    
+        
+
+</div>
+    </article>
+</div>
+<!-- listing-item end-->  
+</div><div class="slick-item slick-slide-itemsss lslider-item"><!-- listing-item -->
+<div class="listing-item listing-item-loop for-lslider"  data-postid="5126">
+    <article class="geodir-category-listing fl-wrap">
+        <div class="azp_element preview_listing azp-element-azp-withqfz5u2l geodir-category-img" >
+    <a href="../contemporary-apartment/index.html" class="listing-thumb-link geodir-category-img_item">
+        
+        <img width="424" height="280" class="respimg lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/6-424x280.jpg" data-lazy="../../wp-content/uploads/2021/03/6-424x280.jpg" />
+        <div class="overlay"></div>    </a>
+
+    <div class="geodir-category-location">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=40.78708237136644,-73.97548763779922" class="single-map-item tolt" data-newlatitude="40.88496706" data-newlongitude="-73.88191222" data-microtip-position="top-left" data-tooltip="On the map">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>70 Bright St New York, USA</span></a>                                              
+    </div>
+
+            <div class="listing-featured">Featured</div>
+    
+            <div class="list-single-opt_header_cat dis-flex-wrap">
+            <a href="../../listing_status/for-sale/index.html" class="cat-opt status-opt flex-items-center">For Sale</span></a>             <a href="../../listing_cat/apartment/index.html" class="cat-opt flex-items-center">Apartment</a>         </div>
+    
+
+        
+                    <a href="#" class="geodir_save-btn tolt logreg-modal-open" data-message="Logging in first to save this listing." data-microtip-position="left" data-tooltip="Login"><span><i class="fal fa-heart"></i></span></a>
+        
+            <a href="#" class="compare-btn tolt compare-btn-5126" 
+    data-microtip-position="left" data-tooltip="Compare" 
+    data-text1="Compare" data-text2="Added to Compare"
+    data-lid="5126" data-ltitle="Contemporary Apartment" 
+    data-lthumb="../../wp-content/uploads/2021/03/6-150x150.jpg"
+    data-lprice="Rs44,927,190"
+    data-laddress="70 Bright St New York, USA"
+    ><span><i class="fal fa-random"></i></span></a>
+        <div class="geodir-category-listing_media-list">
+        <span><i class="fas fa-camera"></i> 6</span>
+    </div>
+    
+
+    
+        
+
+    
+    
+
+            <div class="lcard-saleoff">
+            <div class="saleoff-inner">Sale 20%</div>
+        </div>
+     
+
+    
+    
+        
+        <div class="lcfields-wrap lcfields-abs dis-flex-wrap"></div>
+    
+</div>
+<div class="azp_element preview_listing_content azp-element-azp-byjy53nmnw geodir-category-content" >
+
+    
+    <h3 class="title-sin_item dis-flex-wrap-center">
+                <a href="../contemporary-apartment/index.html">Contemporary Apartment</a>
+                    <span class="verified-badge tolt" data-microtip-position="top" data-tooltip="Verified"><i class="far fa-check"></i></span>
+            </h3>
+    <div class="geodir-category-content_price">Rs44,927,190</div>    <div class="geodir-card-text">
+                <div class="geodir-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.</div>
+                        <div class="lcfields-wrap dis-flex-wrap-center"></div>
+                <div class="geodir-category-content-details">
+            <ul class="no-list-style dis-flex-wrap">
+                <li><i class="fal fa-bed"></i><span>3</span></li>                <li><i class="fal fa-bath"></i><span>2</span></li>                <li><i class="fal fa-cube"></i><span> 450 ft2</span></li>            </ul>
+        </div>
+        
+
+                    </div>
+        <div class="geodir-category-footer dis-flex-wrap-center jtf-space-between">
+                <a href="../../author/admin/index.html" class="gcf-company"><img alt="CTH Themes" class="avatar avatar-80 photo lazy" height="80" width="80" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg"><span class="lcard-avatar">By CTH Themes</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Good" data-stars="5" data-rating="4.3"></div>
+          
+    
+        
+    </div>
+    
+        
+
+</div>
+    </article>
+</div>
+<!-- listing-item end-->  
+</div><div class="slick-item slick-slide-itemsss lslider-item"><!-- listing-item -->
+<div class="listing-item listing-item-loop for-lslider"  data-postid="1744">
+    <article class="geodir-category-listing fl-wrap">
+        <div class="azp_element preview_listing azp-element-azp-withqfz5u2l geodir-category-img" >
+    <a href="../urban-house/index.html" class="listing-thumb-link geodir-category-img_item">
+        
+        <img width="424" height="280" class="respimg lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/9-424x280.jpg" data-lazy="../../wp-content/uploads/2021/03/9-424x280.jpg" />
+        <div class="overlay"></div>    </a>
+
+    <div class="geodir-category-location">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=40.7172387,-74.04772960000003" class="single-map-item tolt" data-newlatitude="40.88496706" data-newlongitude="-73.88191222" data-microtip-position="top-left" data-tooltip="On the map">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>75 Prince St, NY, USA</span></a>                                              
+    </div>
+
+            <div class="listing-featured">Featured</div>
+    
+            <div class="list-single-opt_header_cat dis-flex-wrap">
+            <a href="../../listing_status/for-sale/index.html" class="cat-opt status-opt flex-items-center">For Sale</span></a>             <a href="../../listing_cat/house/index.html" class="cat-opt flex-items-center">House</a>         </div>
+    
+
+        
+                    <a href="#" class="geodir_save-btn tolt logreg-modal-open" data-message="Logging in first to save this listing." data-microtip-position="left" data-tooltip="Login"><span><i class="fal fa-heart"></i></span></a>
+        
+            <a href="#" class="compare-btn tolt compare-btn-1744" 
+    data-microtip-position="left" data-tooltip="Compare" 
+    data-text1="Compare" data-text2="Added to Compare"
+    data-lid="1744" data-ltitle="Urban House" 
+    data-lthumb="../../wp-content/uploads/2021/03/9-150x150.jpg"
+    data-lprice="Rs37,439,325"
+    data-laddress="75 Prince St, NY, USA"
+    ><span><i class="fal fa-random"></i></span></a>
+        <div class="geodir-category-listing_media-list">
+        <span><i class="fas fa-camera"></i> 6</span>
+    </div>
+    
+
+    
+        
+
+    
+    
+
+     
+
+    
+    
+        
+        <div class="lcfields-wrap lcfields-abs dis-flex-wrap"></div>
+    
+</div>
+<div class="azp_element preview_listing_content azp-element-azp-byjy53nmnw geodir-category-content" >
+
+    
+    <h3 class="title-sin_item dis-flex-wrap-center">
+                <a href="../urban-house/index.html">Urban House</a>
+                    <span class="verified-badge tolt" data-microtip-position="top" data-tooltip="Verified"><i class="far fa-check"></i></span>
+            </h3>
+    <div class="geodir-category-content_price">Rs37,439,325</div>    <div class="geodir-card-text">
+                <div class="geodir-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.</div>
+                        <div class="lcfields-wrap dis-flex-wrap-center"></div>
+                <div class="geodir-category-content-details">
+            <ul class="no-list-style dis-flex-wrap">
+                <li><i class="fal fa-bed"></i><span>4</span></li>                <li><i class="fal fa-bath"></i><span>3</span></li>                <li><i class="fal fa-cube"></i><span> 510 ft2</span></li>            </ul>
+        </div>
+        
+
+                    </div>
+        <div class="geodir-category-footer dis-flex-wrap-center jtf-space-between">
+                <a href="../../author/admin/index.html" class="gcf-company"><img alt="CTH Themes" class="avatar avatar-80 photo lazy" height="80" width="80" data-src="https://homeradar.cththemes.co/wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg" data-lazy="../../wp-content/plugins/homeradar-add-ons/assets/images/avatar.jpg"><span class="lcard-avatar">By CTH Themes</span></a>
+                                            <div class="listing-rating card-popup-rainingvis tolt" data-microtip-position="top" data-tooltip="Good" data-stars="5" data-rating="4.3"></div>
+          
+    
+        
+    </div>
+    
+        
+
+</div>
+    </article>
+</div>
+<!-- listing-item end-->  
+</div>                    </div>
+                    <div class="crs-button-prev lc-wbtn lc-wbtn_prev"><i class="fal fa-angle-left"></i></div>
+                    <div class="crs-button-next lc-wbtn lc-wbtn_next"><i class="fal fa-angle-right"></i></div>
+                </div>
+
+        </div>
+    </div>
+    <!--box-widget-item end -->  
+</div> 
+			</div>
+				</div>
+	</div>
+	
+</div>
+<div class="limit-box"></div>
+<div class="clearfix"></div>
+
+		<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+			<div class='footer-width-fixer'>		<div data-elementor-type="wp-post" data-elementor-id="8091" class="elementor elementor-8091" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-d5780dc elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d5780dc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f4fcf6" data-id="8f4fcf6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f197455 elementor-widget elementor-widget-shortcode" data-id="f197455" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><div class="subscribe-wrap fl-wrap">
+    <div class="container">
+        <div class="subscribe-container fl-wrap color-bg">
+            <div class="pwh_bg"></div>
+            <div class="mrb_dec mrb_dec3"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="subscribe-header">
+                        <h4>newsletter</h4>
+                        <h3>Sign up for newsletter and get latest news and update</h3>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                   <script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.8.3 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-8090" method="post" data-id="8090" data-name="NEWSLETTER" ><div class="mc4wp-form-fields"><div class="subcribe-form">
+  <div class="subcribe-form-row subform-input-submit">
+    <input type="email" name="EMAIL" placeholder="Your email address" required />
+    <button type="submit" class="subscribe-button color-bg">Subscribe</button>
+  </div>
+</div>
+</div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1669541897" /><input type="hidden" name="_mc4wp_form_id" value="8090" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2e2c4fe pad-bot-60 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2e2c4fe" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-extended">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f2b8e7a" data-id="f2b8e7a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7652a05 elementor-widget elementor-widget-site-logo" data-id="7652a05" data-element_type="widget" data-widget_type="site-logo.default">
+				<div class="elementor-widget-container">
+					<div class="hfe-site-logo">
+													<a data-elementor-open-lightbox=""  class='elementor-clickable' href="../../index.html">
+							<div class="hfe-site-logo-set">           
+				<div class="hfe-site-logo-container">
+					<img class="hfe-site-logo-img elementor-animation-"  src="../../wp-content/uploads/2021/03/logo.png" alt=""/>
+				</div>
+			</div>
+							</a>
+						</div>  
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-d1da590 elementor-widget elementor-widget-heading" data-id="d1da590" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e532bfb elementor-widget elementor-widget-wk_hours" data-id="e532bfb" data-element_type="widget" data-widget_type="wk_hours.default">
+				<div class="elementor-widget-container">
+			        <div class="fw_hours fl-wrap">
+                            <span>Monday - Friday: <strong>8am - 6pm</strong></span>
+                            <span>Saturday - Sunday: <strong>9am - 3pm</strong></span>
+                    </div>
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e116fa7" data-id="e116fa7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-50ca67b elementor-widget elementor-widget-heading" data-id="50ca67b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Helpful links</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b2687a3 elementor-widget elementor-widget-footer_nav" data-id="b2687a3" data-element_type="widget" data-widget_type="footer_nav.default">
+				<div class="elementor-widget-container">
+			        <div class="footer_nav-ele">
+            <ul id="menu-helpful-links" class="footer-list no-list-style"><li id="menu-item-8152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8152"><a href="../../about/index.html">About Our Company</a></li>
+<li id="menu-item-8151" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-8151"><a href="../../news/index.html">Our Last News</a></li>
+<li id="menu-item-8155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8155"><a href="../../pricing/index.html">Pricing Plans</a></li>
+<li id="menu-item-8153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8153"><a href="../../contacts/index.html">Contacts</a></li>
+<li id="menu-item-8154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8154"><a href="../../help-center/index.html">Help Center</a></li>
+</ul>        </div>
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7ddf30d" data-id="7ddf30d" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-28408ac elementor-widget elementor-widget-heading" data-id="28408ac" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Contacts Info</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d75a557 elementor-widget elementor-widget-contact_infos" data-id="d75a557" data-element_type="widget" data-widget_type="contact_infos.default">
+				<div class="elementor-widget-container">
+			        <ul class="footer-contacts fl-wrap no-list-style">
+             
+            <li><span><i class="fal fa-envelope"></i>Mail :</span><a href="#">yourmail@domain.com</a></li>
+             
+            <li><span><i class="fal fa-map-marker"></i>Adress :</span><a href="#">USA 27TH Brooklyn NY</a></li>
+             
+            <li><span><i class="fal fa-phone"></i>Phone :</span><a href="#">+7(111)123456789</a></li>
+                    </ul>
+        		</div>
+				</div>
+				<div class="elementor-element elementor-element-bbfa5d3 elementor-shape-square e-grid-align-left elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="bbfa5d3" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-b4661d7" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-9c078d2" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-da0d47e" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-vk elementor-repeater-item-c112997" target="_blank">
+						<span class="elementor-screen-only">Vk</span>
+						<i class="fab fa-vk"></i>					</a>
+				</div>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-27b9cd7" data-id="27b9cd7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e2ced88 elementor-widget elementor-widget-heading" data-id="e2ced88" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Download our API</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-eafc3c3 elementor-widget elementor-widget-heading" data-id="eafc3c3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Start working with Homeradar that can provide everything you need</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-34a8830 elementor-widget elementor-widget-cthbutton" data-id="34a8830" data-element_type="widget" data-widget_type="cthbutton.default">
+				<div class="elementor-widget-container">
+			 
+            <a href="#" class="cthbtn btn color-bg normal-btn external_link fullw-btn icon-left" target="_blank"><i class="fab fa-apple"></i>App Sote</a>
+        		</div>
+				</div>
+				<div class="elementor-element elementor-element-440af31 elementor-widget elementor-widget-cthbutton" data-id="440af31" data-element_type="widget" data-widget_type="cthbutton.default">
+				<div class="elementor-widget-container">
+			 
+            <a href="#" class="cthbtn btn color-bg normal-btn external_link fullw-btn icon-left" target="_blank"><i class="fab fa-google-play"></i>Play Market</a>
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-331105a elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="331105a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-extended">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d72d6fd" data-id="d72d6fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-eb776cb ftcopyright elementor-widget elementor-widget-heading" data-id="eb776cb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default"><span class="ft-copy">&#169; <a href="https://themeforest.net/user/cththemes" target="_blank">CTHthemes</a> 2021.  All rights reserved.</span></p>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c5555c4" data-id="c5555c4" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3c3127d text-right elementor-widget elementor-widget-footer_nav" data-id="3c3127d" data-element_type="widget" data-widget_type="footer_nav.default">
+				<div class="elementor-widget-container">
+			        <div class="footer_nav-ele">
+            <ul id="menu-footer-menu" class="footer-list-inline no-list-style"><li id="menu-item-6723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6723"><a href="#">Terms of use</a></li>
+<li id="menu-item-6724" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6724"><a href="#">Privacy Policy</a></li>
+<li id="menu-item-6725" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-6725"><a href="../../news/index.html">Blog</a></li>
+</ul>        </div>
+        		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		</div>		</footer>
+	</div><!-- #page -->
+        <div id="chat-app"></div>
+    <a class="to-top"><i class="fas fa-caret-up"></i></a><script type="text/template" id="tmpl-load-listings">
+    <div class="listings-loader">
+        <div class="lload-icon-wrap">
+            <i class="fal fa-spinner fa-pulse fa-3x"></i>
+        </div>
+        <div class="lload-text-wrap">Loading</div>
+    </div>
+</script>
+
+<script type="text/template" id="tmpl-no-results">
+    <div class="no-results-search">
+	<h2>No Results</h2>
+	<p>There are no listings matching your search.</p>
+	<p>Try changing your search filters or <a href="https://homeradar.cththemes.co/listing/kayak-point-house?replytocom=183&currency=INR" class="reset-filter-link">Reset Filter</a></p>
+</div></script>
+<script type="text/template" id="tmpl-map-info">
+
+    <div class="map-popup-wrap">
+        <div class="map-popup">
+            {{{data.lstatus}}}{{{data.cat}}}
+            <div class="infoBox-close"><i class="fal fa-times"></i></div> 
+            <a href="{{data.url}}" class="listing-img-content" style="background-image: url({{data.thumbnail}})"></a> 
+            <div class="listing-content">  
+                <div class="listing-title">   
+                    <h4><a href="{{data.url}}">{{{data.title}}}</a></h4>
+                    <# if(data.address){ #><span class="map-popup-location-info">{{{data.address}}}</span><# } #>
+                </div>
+                <span class="map-popup-price fl-wrap">{{{data.price}}}</span>
+            </div>    
+        </div>
+    </div>
+
+    
+    
+
+
+</script>
+
+<script type="text/template" id="tmpl-feature-search">
+<# _.each(data.features, function(fea){ #>
+<div class="listing-feature-wrap">
+    <input id="features_{{fea.value}}" type="checkbox" value="{{fea.value}}" name="lfeas[]">
+    <label for="features_{{fea.value}}">{{fea.label}}</label>
+</div>
+<!-- end listing-feature-wrap -->
+<# }) #>
+</script>
+<script type="text/template" id="tmpl-filter-subcats">
+<# _.each(data.subcats, function(subcat){ #>
+<div class="listing-feature-wrap">
+    <input id="filter_subcats_{{subcat.id}}" type="checkbox" value="{{subcat.id}}" name="filter_subcats[]">
+    <label for="filter_subcats_{{subcat.id}}">{{subcat.name}}</label>
+</div>
+<!-- end listing-feature-wrap -->
+<# }) #>
+</script>
+<div id="ol-popup" class="ol-popup">
+    <a href="#" id="ol-popup-closer" class="ol-popup-closer"></a>
+    <div id="ol-popup-content"></div>
+</div>
+<script type="text/template" id="tmpl-room-inquiry-fields">
+    <div class="fl-wrap">
+        
+        <label class="lbl-hasIcon"><i class="fal fa-user"></i></label>
+        <input name="lb_name" class="has-icon" type="text" placeholder="Your Name*" value="" required="required">
+    </div>
+    <div class="fl-wrap">
+        <label class="lbl-hasIcon"><i class="fal fa-envelope"></i></label>
+        <input name="lb_email" class="has-icon" type="email" placeholder="Email Address*" value="" required="required">
+    </div>
+    <div class="fl-wrap">
+        <label class="lbl-hasIcon"><i class="fal fa-phone"></i></label>
+        <input name="lb_phone" class="has-icon" type="text" placeholder="Phone" value="" required="required">
+    </div>
+</script>    <!--ajax-modal-container-->
+    <div class="ajax-modal-overlay"></div>
+    <div class="ajax-modal-container">
+        <!--ajax-modal -->
+        <div class='ajax-loader'>
+            <div class='ajax-loader-cirle'></div>
+        </div>
+        <div id="ajax-modal" class="fl-wrap ajax-modal-wrap"></div><!--#ajax-modal end -->
+    </div>
+    <!--ajax-modal-container end -->
+    <script>(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<!--register form -->
+<div class="main-register-wrap ctb-modal-wrap ctb-modal" id="ctb-logreg-modal">
+    <div class="reg-overlay"></div>
+    <div class="main-register-holder tabs-act">
+        <div class="main-register-wrapper modal_main fl-wrap dis-flex">
+            <div class="main-register-header color-bg">
+                <div class="main-register-logo fl-wrap">
+                    <a class="custom-logo-link logo-text" href="../../index.html"><img width="192" height="41" class="attachment-full size-full lazy" alt="" loading="lazy" data-src="https://homeradar.cththemes.co/wp-content/uploads/2021/03/white-logo.png" data-lazy="https://homeradar.cththemes.co/wp-content/uploads/2021/03/white-logo.png" /></a>                </div>
+                                                <div class="main-register-bg bg" data-bg="https://homeradar.cththemes.co/wp-content/uploads/2021/01/city-bg.png">
+                    <div class="mrb_pin"></div>
+                    <div class="mrb_pin mrb_pin2"></div>
+                </div>
+                <div class="mrb_dec"></div>
+                <div class="mrb_dec mrb_dec2"></div>
+            </div>
+            <div class="main-register tabs-wrapper">
+                <div class="close-reg ctb-modal-close"><i class="fal fa-times"></i></div>
+                <ul class="tabs-menu fl-wrap no-list-style">
+                    <li class="current"><a href="#tab-login"><i class="fal fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="#tab-register"><i class="fal fa-user-plus"></i> Register</a></li>
+                </ul>
+
+                <!--tabs -->                       
+                <div class="tabs-container">
+                    <div class="tab">
+                        <!--tab -->
+                        <div id="tab-login" class="tab-content first-tab">
+                            <div class="custom-form">
+                                <form method="post" id="homeradar-login">
+                                    <div class="log-message"></div>
+                                    <div class="hasIcon">
+                                        <label for="user_login">Username or Email Address <span>*</span><span class="dec-icon"><i class="fal fa-user"></i></span></label>
+                                        <input id="user_login" name="log" type="text" onClick="this.select()" value="" required>
+                                    </div>
+                                    <div class="hasIcon">
+                                        <label for="user_pass">Password <span>*</span><span class="dec-icon"><i class="fal fa-key"></i></span></label>
+                                        <input id="user_pass" name="pwd" type="password" onClick="this.select()" value="" required>
+                                    </div>
+                                    
+                                    <div class="clearfix"></div>
+                                    <div class="flex-items-center jtf-space-between mb-20">
+                                        <div class="filter-tags dis-flex">
+                                            <input name="rememberme" id="rememberme" value="true" type="checkbox">
+                                            <label for="rememberme">Remember me</label>
+                                        </div>
+                                        <div class="lost_password">
+                                            <a class="lost-password" href="../../forget-password-page/index.html">Lost Your Password?</a>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" id="log-submit" class="log-submit-btn log_btn color-bg">Log In</button>
+
+                                    
+                                        
+                                    <input type="hidden" id="_loginnonce" name="_loginnonce" value="87f5618782" /><input type="hidden" name="_wp_http_referer" value="/listing/kayak-point-house/?replytocom=183&amp;currency=INR" />                                    
+                                    <input type="hidden" name="redirection" value="index4b1c.html?replytocom=183&amp;currency=INR" />
+                                </form>
+                            </div>
+                        </div>
+                        <!--tab end -->
+                        <!--tab -->
+                        <div class="tab">
+                            <div id="tab-register" class="tab-content">
+                                <div class="custom-form">
+                                    <form method="post" class="main-register-form" id="homeradar-register">
+                                        <div class="reg-message"></div>
+        
+                                                                                    <p>Account details will be confirmed via email.</p>
+                                        
+                                                                                <div class="hasIcon">
+                                            <label for="reg_username">Username <span>*</span><span class="dec-icon"><i class="fal fa-user"></i></span></label>
+                                            <input id="reg_username" name="username" type="text"  onClick="this.select()" value="" required 
+                                                pattern="^[A-Za-z\d\.]{6,}$"                                                title="You can use letters, numbers and periods and at least 6 characters or more"                                            >
+                                            <span class="input-pattern-desc">You can use letters, numbers and periods and at least 6 characters or more</span>                                        </div>
+
+                                        
+                                                                                                                        <div class="hasIcon">
+                                            <label for="reg_email">Email Address <span>*</span><span class="dec-icon"><i class="fal fa-envelope"></i></span></label>
+                                            <input id="reg_email" name="email" type="email"  onClick="this.select()" value="" required 
+                                                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"                                                title="Make sure to enter all lowercase letters for your email address"                                            >
+                                            <span class="input-pattern-desc">Make sure to enter all lowercase letters for your email address</span>                                        </div>
+                                                                                
+                                        
+                                        <div class="terms_wrap">
+                                                                                        <div class="filter-tags flex-items-center mb-10">
+                                                <input id="accept_term" name="accept_term" value="1" type="checkbox" required="required">
+                                                <label for="accept_term">By using the website, you accept the terms and conditions</label>
+                                            </div>
+                                                                                                                                    <div class="filter-tags flex-items-center">
+                                                <input id="consent_data" name="consent_data" value="1" type="checkbox" required="required">
+                                                <label for="consent_data">Consent to processing of personal data</label>
+                                            </div>
+                                                                                    </div>
+                                        <div class="clearfix"></div>
+
+                                                                                
+                                        <button type="submit" id="reg-submit" class="log-submit-btn log_btn color-bg">Register</button>
+
+                                        <input type="hidden" id="_regnonce" name="_regnonce" value="33251d6ea1" /><input type="hidden" name="_wp_http_referer" value="/listing/kayak-point-house/?replytocom=183&amp;currency=INR" />
+                                        <input type="hidden" name="redirection" value="index4b1c.html?replytocom=183&amp;currency=INR" />
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab end -->
+                    </div>
+                    <!--tabs end -->
+                    <div class="log-separator fl-wrap"><span>or</span></div>                    <div class="soc-log fl-wrap">
+                        <p>For faster login or register use your social account.</p>
+<div class="fbl-button" data-redirect="https://homeradar.cththemes.co/listing/kayak-point-house/?replytocom=183&currency=INR" data-fb_nonce="434b0f8dec">
+			<img data-no-lazy="1" src="../../wp-content/plugins/wp-facebook-login/public/img/loading.svg" alt="" class="fbl-spinner"/>
+		<div class="fb-login-button" data-max-rows="1" onlogin="fbl_loginCheck" data-width="" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auth-type="rerequest" data-auto-logout-link="false" data-use-continue-as="true" data-scope="email,public_profile"></div>
+		</div>		<script type="text/javascript">
+			window.fbl_started = false;
+			function fbl_init(){
+			    try{
+	                window.FB.init({
+	                    appId      : '1994730950790757',
+	                    cookie     : true,
+	                    xfbml      : true,
+	                    status     : false,
+	                    autoLogAppEvents : true,
+	                    version    : 'v6.0'
+	                });
+	                window.FB.Event.subscribe('xfbml.render', function() {
+	                    FBL.renderFinish();
+	                } );
+	                window.fbl_started = true;
+			    } catch (e){}
+            }
+			window.fbAsyncInit = function() {
+			    if( ! window.fbl_started )
+                    fbl_init()
+			};
+
+            var fbl_interval = window.setInterval(function(){
+                if(window.fbl_started)
+                    clearInterval(fbl_interval);
+                if( !window.fbl_started)
+                    fbl_init();
+            },100);
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "../../../connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+		</script>                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--register form end -->
+
+<div class="ctb-modal-wrap ctb-modal" id="ctb-resetpsw-modal">
+    <div class="ctb-modal-holder">
+        <div class="ctb-modal-inner modal_main">
+            <div class="ctb-modal-close"><i class="fal fa-times"></i></div>
+            <div class="ctb-modal-title">Reset <span><strong>Password</strong></span></div>
+            <div class="ctb-modal-content">
+                
+                <form class="reset-password-form custom-form" action="#" method="post">
+                    <div class="hasIcon mb-20">
+                        <label for="user_reset">Username or Email Address <span>*</span><span class="dec-icon"><i class="fal fa-user"></i></span></label>
+                        <input id="user_reset" name="user_login" type="text"  value="" required>
+                    </div>
+                    <button type="submit" class="log_btn color-bg">Get New Password</button>
+
+                    
+                </form>
+            </div>
+            <!-- end modal-content -->
+        </div>
+    </div>
+</div>
+<!-- end reset password modal --> 
+<script type='text/javascript' src='../../wp-includes/js/dist/vendor/wp-polyfill89b1.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="../../wp-includes/js/dist/vendor/wp-polyfill-fetch6e0e.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="../../wp-includes/js/dist/vendor/wp-polyfill-node-contains2e00.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="../../wp-includes/js/dist/vendor/wp-polyfill-dom-rect2e00.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="../../wp-includes/js/dist/vendor/wp-polyfill-url5aed.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="../../wp-includes/js/dist/vendor/wp-polyfill-formdatae9bd.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="../../wp-includes/js/dist/vendor/wp-polyfill-element-closest4c56.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="../../wp-includes/js/dist/vendor/wp-polyfill-object-fit531b.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='../../wp-includes/js/dist/hooksc5c2.js?ver=d0188aa6c336f8bb426fe5318b7f5b72' id='wp-hooks-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/dist/i18n802d.js?ver=6ae7d829c963a7d8856558f3f9b32b43' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='../../wp-includes/js/dist/vendor/lodashd1d1.js?ver=4.17.21' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='../../wp-includes/js/dist/url7657.js?ver=7c99a9585caad6f2f16c19ecd17a86cd' id='wp-url-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='../../wp-includes/js/dist/api-fetchaef8.js?ver=25cbf3644d200bdc5cab50e7966b5b03' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "../../wp-json/index.html" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "34a1ba0917" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "../../wp-admin/admin-ajaxf809.html?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/index91d5.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/plugins.js' id='homeradar-addons-plugins-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/underscore.min4511.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/masonry.min3a05.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/ui/core35d0.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/ui/mouse35d0.js?ver=1.12.1' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/ui/sortable35d0.js?ver=1.12.1' id='jquery-ui-sortable-js'></script>
+<script type='text/javascript' id='homeradar-addons-js-extra'>
+/* <![CDATA[ */
+var _homeradar_add_ons = {"url":"https:\/\/homeradar.cththemes.co\/wp-admin\/admin-ajax.php","nonce":"70f466b9c0","posted_on":"Posted on ","reply":"Reply","retweet":"Retweet","favorite":"Favorite","pl_w":"Please wait...","like":"Like","unlike":"Unlike","use_dfmarker":"","hide_mkprice":"","marker":"https:\/\/homeradar.cththemes.co\/wp-content\/uploads\/2021\/02\/marker-single.png","center_lat":"40.7","center_lng":"-73.87","map_zoom":"10","socials":{"facebook-f":"Facebook","twitter":"Twitter","youtube":"Youtube","vimeo-v":"Vimeo","instagram":"Instagram","vk":"Vkontakte","reddit":"Reddit","pinterest-p":"Pinterest","vine":"Vine Camera","tumblr":"Tumblr","flickr":"Flickr","google-plus-g":"Google+","linkedin-in":"LinkedIn","whatsapp":"Whatsapp","meetup":"Meetup","odnoklassniki":"Odnoklassniki","envelope":"Email","telegram":"Telegram"},"gmap_type":"ROADMAP","login_delay":"5000","listing_type_opts":[],"chatbox_message":"We are here to help. Please ask us anything or share your feedback","post_id":"5115","ckot_url":"https:\/\/homeradar.cththemes.co\/listing-checkout\/","location_type":"administrative_area_level_1","autocomplete_result_type":"none","address_format":["formatted_address"],"country_restrictions":[""],"place_lng":"","disable_bubble":"","lb_approved":"Approved","lb_24h":"1","td_color":"#3270fc","lb_delay":"3000","md_limit":"3","md_limit_msg":"Max upload files is 3","md_limit_size":"2","md_limit_size_msg":"Max upload file size is 2 MB","search":"Search...","gcaptcha":"","gcaptcha_key":"","location_show_state":"yes","weather_unit":"metric","weather_strings":{"days":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"min":"Min","max":"Max","direction":["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"]},"i18n":{"share_on":"Share this on {SOCIAL}","del-listing":"Are you sure want to delete {{listing_title}} listing and its data?\nThe listing is permanently deleted.","cancel-booking":"Are you sure want to cancel {{booking_title}} booking?","approve-booking":"Are you sure want to approve {{booking_title}} booking?","del-booking":"Are you sure want to delete {{booking_title}} booking and its data?\nThe booking is permanently deleted.","del-message":"Are you sure want to cancel {{message_title}} message?","chats_h3":"Inbox","chat_fr_owner":"Chat With Owner","chat_fr_login":"Login to chat","chat_fr_cwith":"Chat with ","chat_fr_conver":"Conversations","change_pas_h3":" Change Password","change_pas_lb_CP":"Current Password","change_pas_lb_NP":"New Password","change_pas_lb_CNP":"Confirm New Password","inner_chat_op_W":"Week","inner_chat_op_M":"Month","inner_chat_op_Y":"Year","inner_listing_li_E":"Edit ","inner_listing_li_D":"Delete ","author_review_h3":"Reviews for your listings","likebtn":"Like Button","welcome":"Welcome","listings":"Listings","bookings":"Bookings","reviews":"Reviews","log_out":"Log Out ","add_hour":"Add Hour","book_dates":"Dates","book_services":"Extra Services","book_ad":"ADULTS","book_chi":"CHILDREN","book_avr":"Available Rooms","book_ts":"Total Cost","book_chev":"Check availability","book_bn":"Book Now","checkout_can":"Cancel","checkout_app":"Apply","roomsl_avai":"Available:","roomsl_maxg":"Max Guests: ","roomsl_quan":"Quantity","btn_save":"Save Change","btn_save_c":"Save Changes","btn_close":"Close me","btn_send":"Send","btn_add_F":"Add Fact","fact_title":"Fact Title","fact_number":"Fact Number","fact_icon":"Fact Icon","location_country":"Country","location_state":"State","location_city":"City","faq_title":"Question","faq_content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.","btn_add_Faq":"Add FAQ","btn_add_S":"Add Social","btn_add_R":"Add Room","btn_add_N":"Add New","image_upload":" Click here to upload","th_mount":"Amount","th_method":"Method","th_to":"To","th_date":"Date Submitted","th_status":"Status","calendar_dis_number":"Select the number of months displayed.","calendar_number_one":"One Months","calendar_number_two":"Two Months","calendar_number_three":"Three Months","calendar_number_four":"Four Months","calendar_number_five":"Five Months","calendar_number_six":"Six Months","calendar_number_seven":"Seven Months","coupon_code":"Coupon code","coupon_discount":"Discount type","coupon_percentage":"Percentage discount","coupon_fix_cart":"Fixed cart discount","coupon_desc":"Description","coupon_show":"Display content in widget banner?","coupon_amount":"Discount amount","coupon_qtt":"Coupon quantity","coupon_expiry":"Coupon expiry date","coupon_format":"Format:YY-mm-dd HH:ii:ss","bt_coupon":"Add Coupon","bt_services":"Add Service","services_name":"Service Name","services_desc":"Description","services_price":"Service Price","bt_member":"Add Member","member_name":"Name: ","member_job":"Job or Position: ","member_desc":"Description","member_img":"Image","memeber_social":"Socials","member_url":"Website","days":["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"earnings_title":"Your Earnings","th_date_":"Date","th_total_":"Total","th_fee_":"Author Fee","th_earning_":"Earning","th_order_":"Order","go_back":"Go back","no_earning":"You have no earning.","th_vat_ser":"VAT - Services","cancel":"Cancel","submit":"Submit","ltype_title":"Listing type","ltype_desc":"Listing type description","wkh_enter":"Enter Hours","wkh_open":"Open all day","wkh_close":"Close all day","calen_lock":"Lock this month","calen_unlock":"Unlock this month","smwdtitle":"Submit a withdrawal request","wdfunds":"Withdraw funds","goearnings":"View Earnings","chat_type_msg":"Type Message","save":"Save","cal_event_start":"Event start time: ","cal_event_end":"Event end date: ","cal_opts":"Options","wth_payments":"PayPal \/ Stripe Email","wth_amount":"Amount ","wth_plh_email":"email@gmail.com","wth_acount_balance":"Account Balance","wth_will_process":"Your request will be processed on {DATE}","wth_no_request":"You have no withdrawal request","wth_min_str":"The minimum withdrawal amount is {amount}","wth_max_str":"The maximum withdrawal amount is {amount}","wth_bank_iban":"IBAN","wth_bank_account":"ACOUNT","wth_bank_name":"NAME","wth_bank_bname":"Bank Name","wth_enter_email":"Please enter a correct email address.","bt_slots":"Add Time Slot","slot_time":"Time","slot_guests":"Guests","slot_available":"Available slots","no_ltype":"There is no listing type. Please contact to site owner for more details.","ltype_select_guide":"Click to change listing type","bt_add_menu":"Add Menu","menu_name":"Menu Name","menu_cats":"Menu Types (comma separated)","menu_desc":"Menu Description","menu_price":"Menu Price","menu_url":"Menu Link","menu_photos":"Menu Photos","headm_iframe":"iFrame Source","headm_mp4":"MP4 Video","headm_youtube":"Youtube Video ID","headm_vimeo":"Vimeo Video ID","headm_bgimg":"Background Image","preview_btn":"Preview","add_listing":"Add Listing","edit_listing":"Edit Listing","add_room":"Add Room","edit_room":"Edit Room","nights":"Nights","slots_add":"Add Slot","slots_guests":"Max Guests","slots_start":"Start time","slots_end":"End time","slots_price":"Price","raselect_placeholder":"Select","raselect_nooptions":"No options","cal_bulkedit":"Bulk Edit","save_bulkedit":"Save","cancel_bulkedit":"Cancel","adults":"Adults","children":"Children","AM":"AM","PM":"PM","evt_start":"Start","evt_end":"End","no_slots":"There is no available slot. Select another date.","slots_avai":"{slots} slots available","no_tickets":"There is no available tickets. Select another date.","tickets_required":"You need select a ticket","no_rooms":"There is no room available in the selected period. Please select another period then click on Check availability button","no_rooms_init":"Click on Check availability button to see available rooms","cal_clear_past":"Clear old dates","field_required":"{SMFNAME} field is required. Please enter it value.","floor_title":"Plan Title","floor_size":"Plan Size","floor_desc":"Plan Description","floor_images":"Images","header_bgimage":"Background Image","header_bgvideo":"Background Video","header_bgslider":"Images Slider","header_bgslideshow":"Background Slidshow","header_map":"Map","header_streetview":"Street View","header_iframe":"Embed iFrame"},"distance_df":"10","curr_user":{"id":0,"display_name":"","avatar":"","can_upload":false,"role":false,"is_author":false},"currency":{"rate":"74.87865","decimal":"0","dec_sep":".","ths_sep":",","symbol":"Rs","sb_pos":"left","currency":"INR"},"base_currency":{"currency":"USD","symbol":"$","rate":"1.00","sb_pos":"left_space","decimal":0,"ths_sep":",","dec_sep":"."},"wpml":null,"unfill_address":"","unfill_state":"","unfill_city":"","js_decimals":"0","map_provider":"mapbox","mbtoken":"pk.eyJ1IjoiY3RodGhlbWVzIiwiYSI6ImNrY2ZscmNwYzBodTgzM284NHhwczR4NTYifQ.tiV5QneMfPPyYIIXSDUktw","week_starts_monday":"yes","withdrawal_date":"15","single_map_init":"","hide_cat_features":"","compare_max":"4"};
+var _homeradar_dashboard = {"i18n":{"inner_chat_op_W":"Week","inner_chat_op_M":"Month","inner_chat_op_Y":"Year","chart_alltime":"All time","chart_views_lbl":"Listing Views","chart_earnings_lbl":"Earnings","chart_bookings_lbl":"Bookings","withdrawals":"Withdrawals","wth_notes":"Additional Infos"},"chart_hide_views":"","chart_hide_earning":"","chart_hide_booking":"1","payment":{"submitform":{"title":"Submit Form","icon":"","desc":"<p>Your payment details will be submitted for review.<\/p>","checkout_text":"Place Order"},"cod":{"title":"Cash on delivery","icon":"","desc":"<p>Your payment details will be submitted. Then pay on delivery.<\/p>","checkout_text":"Place Order"},"banktransfer":{"title":"Bank Transfer","icon":"https:\/\/homeradar.cththemes.co\/wp-content\/plugins\/homeradar-add-ons\/assets\/images\/bank-transfer.png","desc":"<p>\r\n    <strong>Bank name<\/strong>: Bank of America, NA<br \/>\r\n    <strong>Bank account number<\/strong>: 0175380000<br \/>\r\n    <strong>Bank address<\/strong>:USA 27TH Brooklyn NY<br \/>\r\n    <strong>Bank SWIFT code<\/strong>: BOFAUS 3N<br \/>\r\n    <\/p>","checkout_text":"Place Order"},"paypal":{"title":"Paypal","icon":"https:\/\/homeradar.cththemes.co\/wp-content\/plugins\/homeradar-add-ons\/assets\/images\/ppcom.png","desc":"<p>Pay via PayPal; you can pay with your credit card if you don\u2019t have a PayPal account.<\/p>","checkout_text":"Process to Paypal"},"stripe":{"title":"Stripe","icon":"https:\/\/homeradar.cththemes.co\/wp-content\/plugins\/homeradar-add-ons\/assets\/images\/stripe.png","desc":"<p>Pay via Stripe; you can pay with your credit card.<\/p>","checkout_text":"Pay Now"},"payfast":{"title":"Pay via Payfast","icon":"https:\/\/homeradar.cththemes.co\/wp-content\/plugins\/homeradar-add-ons\/assets\/images\/payfast.png","desc":"<p>Pay via Payfast; you can pay with your credit card.<\/p>","checkout_text":"Process to Payfast"}},"withdrawal_min":"10"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/homeradar-add-ons.min.js' id='homeradar-addons-js'></script>
+<script type='text/javascript' src='../../../api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js' id='mapbox-gl-js'></script>
+<script type='text/javascript' src='../../../api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js' id='mapbox-gl-geocoder-js'></script>
+<script type='text/javascript' src='../../../cdn.jsdelivr.net/npm/es6-promise%404/dist/es6-promise.min.js' id='es6-promise-js'></script>
+<script type='text/javascript' src='../../../cdn.jsdelivr.net/npm/es6-promise%404/dist/es6-promise.auto.min.js' id='es6-promise-auto-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/mapbox-map.js' id='homeradar-mapbox-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/dist/vendor/reactcd00.js?ver=16.13.1' id='react-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/dist/vendor/react-domcd00.js?ver=16.13.1' id='react-dom-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/react-router-dom.min.js' id='react-router-dom-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/redux.min.js' id='redux-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/react-redux.min.js' id='react-redux-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/redux-thunk.min.js' id='redux-thunk-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/qs.js' id='qs-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/axios.min.js' id='axios-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/homeradar-react-app.min.js' id='homeradar-react-app-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/homeradar-single.min.js' id='homeradar-single-js'></script>
+<script type='text/javascript' src='../../../cdn.addevent.com_443/legacy2000/libs/atc/1.6.1/atc.min.js' async='async' defer='defer' id='addevent-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/homeradar-add-ons/assets/js/homeradar-chat-app.min.js' id='homeradar-chat-app-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI44fd.js?ver=2.70' id='jquery-blockui-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/homeradar.cththemes.co\/woo-cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart6619.js?ver=5.2.5' id='wc-add-to-cart-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie6b25.js?ver=2.1.4' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce6619.js?ver=5.2.5' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_ae6b85b4ff70bbdad9edc95b4a54a743","fragment_name":"wc_fragments_ae6b85b4ff70bbdad9edc95b4a54a743","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments6619.js?ver=5.2.5' id='wc-cart-fragments-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/jquery.easing.min2fca.js?ver=1.4.0' id='jquery-easing-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/jquery.appear26f3.js?ver=0.3.6' id='jquery-appear-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/min.ztext2fb2.js?ver=0.0.2' id='ztext-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/jquery.countTo.js' id='jquery-countto-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/navigation.js' id='single-page-nav-js'></script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/slick.min.js' id='slick-js'></script>
+<script type='text/javascript' id='homeradar-scripts-js-extra'>
+/* <![CDATA[ */
+var _homeradar = {"hheight":"80"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/themes/homeradar/assets/js/scripts.js' id='homeradar-scripts-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/comment-replyd988.js?ver=5.7.8' id='comment-reply-js'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embedd988.js?ver=5.7.8' id='wp-embed-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/mailchimp-for-wp/assets/js/forms7bcd.js?ver=4.8.3' id='mc4wp-forms-api-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/js/webpack.runtimedeae.js?ver=3.2.1' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/js/frontend-modulesdeae.js?ver=3.2.1' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/lib/swiper/swiper48f5.js?ver=5.3.6' id='swiper-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/lib/share-link/share-linkdeae.js?ver=3.2.1' id='share-link-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/lib/dialog/dialoga288.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":true},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.1","is_static":false,"experimentalFeatures":[],"urls":{"assets":"https:\/\/homeradar.cththemes.co\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":5115,"title":"Kayak%20Point%20House%20%2F%2040%20Journal%20Square%20%2C%20NJ%2C%20USA%20%E2%80%93%20HomeRadar","excerpt":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.","featuredImage":"https:\/\/homeradar.cththemes.co\/wp-content\/uploads\/2021\/03\/8-1024x683.jpg"}};
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/js/frontenddeae.js?ver=3.2.1' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/elementor/assets/js/preloaded-modulesdeae.js?ver=3.2.1' id='preloaded-modules-js'></script>
+        <script>
+            function lazyListingsChanged(){
+                // create new window event for listing change
+                var evt = new CustomEvent('listingsChanged', { detail: 'lazy-load' });
+                window.dispatchEvent(evt);
+            }
+            function lazyGalChanged(el){
+                // create new window event for listing change
+                var evt = new CustomEvent('galChanged', { detail: el });
+                window.dispatchEvent(evt);
+            }
+            // Set the options to make LazyLoad self-initialize 
+            window.lazyLoadOptions = {  
+                elements_selector: ".lazy", 
+                // ... more custom settings? 
+                callback_loaded: function(el){
+                    // console.log("Loaded", el)
+
+                    if(window.listingItemsEle != null){
+                        // console.log('has #listing-items');
+                        if(window.listingItemsEle.contains(el)){
+                            // console.log('el inside #listing-items');
+                            lazyListingsChanged()
+                        }
+                    }
+
+                    lazyGalChanged(el)
+                }, 
+                callback_finish: ()=>{
+                    // console.log("Finish")
+                },   
+            };
+            // Listen to the initialization event and get the instance of LazyLoad  
+            window.addEventListener('LazyLoad::Initialized', function (event) { 
+                window.lazyLoadInstance = event.detail.instance; 
+
+                window.listingItemsEle = document.getElementById('listing-items')   
+            }, false);
+        </script>
+        <script async src='../../wp-content/plugins/homeradar-add-ons/assets/js/lazyload.js'></script>
+    </body>
+</html> 
